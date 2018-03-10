@@ -1,0 +1,102 @@
+/* ----------- school schedule table ---------------- */
+
+article.schoolSchedule table tr td { 
+  width: 100px; 
+  border: 1px solid #333;
+  padding: 5px 0; 
+}
+
+section#placeContents { padding: 60px 0; }
+
+/*--------------- news ----------------*/
+section#news {
+  background-image: url(../../img/place/news_bg.png);         
+  background-size: contain;
+  background-position: top;         
+  text-align: center;
+  padding: 60px 0;
+}
+section#news ul.list01 { margin-top: 40px; }
+
+section#news ul.list01 li a  { overflow: hidden; }
+section#news ul.list01 li a span { float: left; }
+
+/*----------------- place ----------------*/
+section#placeContents h3 {
+  color: #333;
+}
+section#placeContents h3:before {
+  border-bottom-color: #f42534;
+  left: 47%;
+  width: 6%;
+}
+section#placeContents article.placeContainer { overflow: hidden; padding: 40px 0 0; }
+section#placeContents article.placeContainer a {
+  width: 320px;
+  height: 208px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  float: left;
+  display: block;
+  position: relative;
+  line-height: 0;
+}
+section#placeContents article.placeContainer a:nth-of-type(1) p,
+section#placeContents article.placeContainer a:nth-of-type(3) p{
+  padding: 20px 10px;
+}
+section#placeContents article.placeContainer a .placeHover {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+  height: 208px;
+  width: 100%;
+  border: 1px solid #333;
+  -webkit-transition: all 2s; /* Safari */
+  transition: all 2s;
+}
+section#placeContents article.placeContainer a:nth-child(3n) { margin-right: 0; }
+section#placeContents article.placeContainer a img { width: 100%; }
+section#placeContents article.placeContainer a p {
+  background-image: url(../../img/place/place_link_bg.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  line-height: 1.4;
+} 
+
+section#placeContents article.placeContainer a:hover .placeHover { display: block; }
+
+/*-------------- smartphone --------------*/
+@media only screen and (max-width: 750px) {
+
+  section#news, section#placeContents { padding: 30px 0; }
+  
+  section#news ul.list01 { margin: 20px 10px 0; }
+  section#news { background-size: contain;}  
+  section#news h3 { padding-bottom: 10px; }
+
+  section#placeContents article.placeContainer a:nth-of-type(1) p,
+  section#placeContents article.placeContainer a:nth-of-type(3) p{
+    padding: 10px 0;
+  }
+
+  section#placeContents h3:before { left: 43%; width: 14%; }     
+  section#placeContents article.placeContainer { padding: 0 10px; margin-top: 20px; } 
+  section#placeContents article.placeContainer a {
+    width: 32%;
+    height: auto;
+    background-size: 5px auto;
+    background-position: 95% 95%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 0;
+  } 
+  section#placeContents article.placeContainer a p { font-size: 11px; line-height: 1.2em; padding: 5px 0;}
+  section#placeContents article.placeContainer a .placeHover{height: 100%;}
+}

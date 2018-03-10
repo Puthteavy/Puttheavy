@@ -1,0 +1,112 @@
+main#mainContent section#businessTabs { padding: 60px 0; }
+
+main#mainContent section#businessTabs .tabs { padding: 0 10px; }
+
+main#mainContent section#businessTabs h3 {
+	color: #333; 
+}
+
+main#mainContent section#businessTabs h3:before {
+	border-color: #f42534;
+	left: 45%;
+	width: 10%;
+} 
+
+main#mainContent section#businessTabs .tabLinksWrapper { margin-bottom: 10px; }
+main#mainContent section#businessTabs .tabLinks { margin: 0; }
+main#mainContent section#businessTabs .tabLinks:nth-child(2) { margin: 0 5px; }
+main#mainContent section#businessTabs .tabLinks li { margin-right: 40px; }
+main#mainContent section#businessTabs .tabLinks li:last-child { margin-right: 0; }
+main#mainContent section#businessTabs .tabLinks:nth-child(2) li:first-child a {  
+	line-height: 20px;
+	font-size: 19px;
+	padding: 25px 0;
+}
+main#mainContent section#businessTabs .tabLinks a {
+	width: 470px;
+}  
+/*main#mainContent section#businessTabs .tabLinks li:nth-of-type(2) a{
+    border: 1px solid #333;
+    background-color: #333333;
+    color: #fff;
+}*/
+main#mainContent section#businessTabs .tabContent { padding-left: 20px; padding-right: 20px; } 
+main#mainContent section#businessTabs .tabContent .businessContent { padding-top: 30px; } 
+main#mainContent section#businessTabs .tabContent .businessContent h5 {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+	color: #00c1de;
+} 
+main#mainContent section#businessTabs .tabContent .businessContent p {  
+	text-align: left;
+	margin-top: 25px;
+	font-size: 16px;
+}
+
+table.tableList {
+	border: none;
+	border-top: 1px solid #ccc;
+	margin: 40px 0 0;
+}
+
+table.tableList tr td {
+	text-align: left;
+	vertical-align: top;
+	font-size: 16px;
+	overflow: hidden;
+}
+table.tableList tr td span { float: left; }
+table.tableList tr td span:first-child { line-height: 23px; }
+
+table.tableList tr td:first-child { width: 15%;}
+
+.magazine {
+	background-color: #f7af00;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 4px;
+	margin-left: 13px;
+}
+
+/*---------------------- tab02 -------------------*/
+main#mainContent section#businessTabs .tabContent #tab02 > p { text-align: right; margin-top: 30px; }
+
+/*---------------------- tab04 -------------------*/
+main#mainContent section#businessTabs .tabContent #tab04 {
+
+}
+
+
+/*------------------- smartphone ---------------*/
+@media only screen and (max-width: 750px) {
+	main#mainContent section#businessTabs {
+		padding: 20px 10px;
+	}
+	main#mainContent section#businessTabs .tabs { padding: 0; }
+	main#mainContent section#businessTabs .tabLinksWrapper {
+		background-color: #fff;
+		padding: 0;
+	}
+	main#mainContent section#businessTabs .tabLinks li { margin-right: 2%; }
+	main#mainContent section#businessTabs .tabLinks:nth-child(2) { margin: 2% 0; }
+	main#mainContent section#businessTabs .tabLinks a { width: 100%; }
+	main#mainContent section#businessTabs .tabLinks:nth-child(2) li:first-child a {
+		font-size: 13px;
+		padding: 12px 0;
+	}
+	main#mainContent section#businessTabs .tabLinks:nth-child(3) li { width: 100%; }
+
+	main#mainContent section#businessTabs .tabContent { padding: 20px 0; }
+	main#mainContent section#businessTabs .tabContent .businessContent { padding-top: 15px; } 
+	main#mainContent section#businessTabs .tabContent .businessContent h4 { font-size: 16px; }
+	main#mainContent section#businessTabs .tabContent .businessContent h5 { font-size: 16px; margin-top: 14px; }
+	main#mainContent section#businessTabs .tabContent .businessContent p { font-size: 14px; margin-top: 14px; }
+
+	main#mainContent section#businessTabs .tabContent #tab02 > p { margin-top: 15px; }
+
+	table.tableList { margin-top: 20px; }
+	table.tableList tr td:first-child { width: 30%;}
+	.magazine { font-size: 12px; padding: 0 3px; margin-left: 2%; }
+
+}

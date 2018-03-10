@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <div class="content">
+       <h1>Validation Form Field</h1>
+     <form action="test.html" method="post">
+         <div class="valid_form">
+             <table class="mailform">
+                 <tr>
+                     <th><label>ID</label></th>
+                     <td>
+                         <input type="text" id="name">
+                     </td>
+
+                 </tr>
+                 <tr>
+                     <th><label class="req">Name</label></th>
+                     <td>
+                         <input type="text" id="name" class="mfp">
+                         <div id="error_msg" class="mfp_err">Empty name</div>
+                     </td>
+
+                 </tr>
+                 <tr>
+                     <th><label class="req">Email</label></th>
+                     <td>
+                         <input type="email" id="email" class="mfp_email">
+                         <div id="error_msg_email" class="mfp_err_email"></div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th><label class="req">URL</label> </th>
+                     <td>
+                         <input type="url" id="url" class="mfp_url">
+                         <div id="error_msg_url" class="mfp_err_url"></div>
+                     </td>
+                 </tr>
+
+
+
+
+
+             </table>
+             <div class="btn_submit">
+                 <button type="submit" class="btn">Submit</button>
+             </div>
+         </div>
+
+     </form>
+   </div>
+   <script src="jquery.js"></script>
+   <script type="text/javascript" src="js.js"></script>
+</body>
+</html>

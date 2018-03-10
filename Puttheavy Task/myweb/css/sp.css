@@ -1,0 +1,4 @@
+@media screen and (max-width: 680px) {
+  .pc{display: none;}
+  .sp{display: block;}
+}

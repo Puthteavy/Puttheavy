@@ -1,0 +1,15 @@
+
+# Install backpack/generators
+composer require backpack/generators --dev
+
+# Install laracasts/generators
+composer require laracasts/generators:dev-master --dev
+
+# Publish configs, langs, views and AdminLTE files
+php artisan vendor:publish --provider="Backpack\Base\BaseServiceProvider"
+
+# Publish config for notifications - prologue/alerts
+php artisan vendor:publish --provider="Prologue\Alerts\AlertsServiceProvider"
+
+# Generate users table (using Laravel's default migrations)
+php artisan migrate

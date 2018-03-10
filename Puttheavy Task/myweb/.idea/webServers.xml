@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e325190f-92e4-427b-992d-b94269714055" name="furisode" url="http://furisode-search.heteml.net">
+        <fileTransfer host="ftp-furisode-search.heteml.net" port="21" rootFolder="/web/wp-content/themes/furisode">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="25288c48-5e4c-4b3d-b85b-9e2c400e6f6f" name="puthteavy" url="http://files.000webhost.com">
+        <fileTransfer host="files.000webhost.com" port="21" rootFolder="/public_html/wp-content/themes/puthteavy">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

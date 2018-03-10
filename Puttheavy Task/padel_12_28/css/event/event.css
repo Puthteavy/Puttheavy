@@ -1,0 +1,33 @@
+main#mainContent section#eventSection { padding: 60px 0px 0px 0px; }
+main#mainContent section#eventSection h3{    color: #333;}
+main#mainContent section#eventSection h3:before {
+    border-color: #f42534;
+    left: 45%;
+    width: 9%;
+}
+main#mainContent section#eventInstagram{
+	padding: 60px 0 40px;
+    background-color: #fffcef;
+    overflow: hidden;
+}
+main#mainContent section#eventInstagram .gallery {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 235px;
+    height: 150px;
+}
+main#mainContent section#eventInstagram .gallery img {
+    width: 100%;
+    height: auto;
+}
+main#mainContent section#eventInstagram .eventInsta{
+	width: 1200px;
+	margin:0 auto;
+}
+@media only screen and (max-width: 750px) {
+	main#mainContent section#eventSection {
+		padding: 20px 10px;
+	}
+	main#mainContent section#eventSection .eventContent { padding: 20px 0; }
+}

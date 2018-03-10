@@ -1,0 +1,10 @@
+#news{
+	margin-bottom: 60px;
+}
+#news h1{
+	font-size: 18px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+#news .mainH2{margin-bottom: 60px;}

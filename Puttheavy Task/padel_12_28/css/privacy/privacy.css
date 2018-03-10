@@ -1,0 +1,53 @@
+main#mainContent section#privacySection{ padding: 60px 0; }
+main#mainContent section#privacySection .privacyContent{
+	width: 940px;
+	margin-bottom: 20px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+
+
+}
+
+main#mainContent section#privacySection .privacyContent article#privacyContentText{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: block;
+}
+main#mainContent section#privacySection .privacyContent p{
+ font-size: 16px;
+}
+main#mainContent section#privacySection .privacyContent h3 {
+	color: #333;
+	font-weight: bold;
+	border-left: 8px solid #f42534;
+	font-size: 25px;
+	text-align: left;
+	padding-left: 10px;
+	line-height: 1.5em;
+	margin: 25px 0px 10px 0px;
+}
+main#mainContent section#privacySection .privacyContent h4{
+	 font-size: 22px;
+	 font-weight: bold;
+	 color: #333;
+	 padding-bottom: 10px;
+	 text-align: left;
+}
+@media only screen and (max-width: 750px) {
+	main#mainContent section#privacySection {
+		padding: 20px 10px;
+	}
+	main#mainContent section#privacySection .privacyContent p{
+	 font-size: 14px;
+	}
+	main#mainContent section#privacySection .privacyContent h3 {
+		color: #333;
+		font-weight: bold;
+		border-left: 8px solid #f42534;
+		font-size: 20px;
+		text-align: left;
+		padding-left: 10px;
+		line-height: 1.5em;
+		margin: 25px 0px 10px 0px;
+	}
+}

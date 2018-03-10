@@ -1,0 +1,286 @@
+.contact header #headerTop a.logo { float: none; }
+
+main#mainContent section#formTabs {
+	padding: 60px 0;
+	background-color: #e9e6db;
+}
+
+main#mainContent section#formTabs h3 {
+	color: #333;
+	padding-bottom: 40px;
+}
+
+main#mainContent section#formTabs h3:before {
+	border-color: #f42534;
+	left: 44%;
+	width: 11%;
+}
+main#mainContent section#formTabs h3 span {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+main#mainContent section#formTabs .tabContent .tab > p {  
+	text-align: center;
+	margin: 30px 0 20px;
+	font-size: 16px;
+}
+
+/*----------------------- form ----------------------*/
+form.contactForm{ text-align: center; }
+
+table.formTable {
+	border: none;
+	margin: 0; 
+	border-spacing: 0 10px;
+    border-collapse: separate;
+    display: inline-table;
+	padding: 0 40px;
+	margin-bottom: 30px;
+}
+
+table.formTable tr td {
+	font-size: 18px;  
+	padding: 0 10px; 
+	text-align: left;
+}
+
+table.formTable tr td:first-child { text-align: right; width: 40%; padding-left: 0; }
+table.formTable tr td:last-child { width: 60%; padding-right: 0; }
+table.formTable tr td:last-child input, table.formTable tr td:last-child textarea { 
+	width: 100%; 
+	padding: 15px 10px; 
+	border: 1px solid #666; 
+}
+table.formTable tr td:last-child input::placeholder, table.formTable tr td:last-child textarea::placeholder { color: #ccc; }
+
+table.formTable tr td:last-child textarea { height: 100px; resize: none; }
+
+table.formTable tr td select#inquiryType {
+	width: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: none;
+}
+table.formTable tr td p {
+	font-size: 14px;
+	margin-top: 10px;
+}
+table.formTable tr td#mediaFile p { margin-top: 0; margin-bottom: 10px; }
+
+table.formTable tr td#interviewDate select {
+	width: 20%;
+	padding: 10px;
+	border: 1px solid #666;
+}
+table.formTable tr td#interviewDate select#interviewDay { margin-left: 30px; }
+
+table.formTable tr td#mediaFile input {
+	padding: 0;
+	border: none;
+}
+/*-------------------- tab02 -----------------------*/
+main#mainContent section#formTabs #tab02 h3 span { line-height: 35px; }
+
+
+/*--------------------- tab04 ----------------------*/
+/*main#mainContent section#formTabs #tab04 table.formTable tr td input,
+main#mainContent section#formTabs #tab04 table.formTable tr td textarea { padding: 15px 10px; }*/
+main#mainContent section#formTabs #tab04 table.formTable tr td select { padding: 5px 10px; width: 25%; }
+main#mainContent section#formTabs #tab04 table.formTable tr:first-child td:last-child input {
+	width: 40%;
+	margin-right: 10%;
+}
+main#mainContent section#formTabs #tab04 table.formTable tr:first-child td:last-child input:last-child { margin-right: 0; }
+main#mainContent section#formTabs #tab04 table.formTable tr td#birthDate input,
+main#mainContent section#formTabs #tab04 table.formTable tr td#birthDate select 
+{ width: 20%; }
+main#mainContent section#formTabs #tab04 table.formTable tr td#birthDate select { margin-left: 45px; }
+main#mainContent section#formTabs #tab04 table.formTable tr td#birthDate select#birthYear { margin-left: 0; }
+main#mainContent section#formTabs #tab04 table.formTable tr td#zipCode { text-align: left; }
+main#mainContent section#formTabs #tab04 table.formTable tr td#zipCode input { width: 25%; } 
+
+
+
+.infoRequired {
+	background-color: #f42534;
+	color: #fff;
+	padding: 2px 4px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.btnSend {
+	padding: 25px 200px;
+	background-color: #f42534;
+	border: none;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+	background-image: url(../../img/btn_more_bg.png);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	-moz-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+}
+
+.btnSend:hover {
+	background-color: #333;
+	color: #fff;
+	background-image: url(../../img/faq_btn_bg.png);
+}
+
+.tdPC { display: block; }
+
+/*---------------------- confirm and complate ------------------*/
+main#mainContent section#confirm, main#mainContent section#complate { padding: 60px 0; }
+main#mainContent section#confirm h3, main#mainContent section#complate h3 { color: #333; }
+main#mainContent section#confirm h3:before, main#mainContent section#complate h3:before { border-color: #f42534; }
+main#mainContent section#confirm h3 span, main#mainContent section#complate h3 span { 
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+	font-size: 40px; 
+	line-height: 40px; 
+	padding-bottom: 40px; 
+}
+main#mainContent section#confirm p, main#mainContent section#complate p { font-size: 16px; text-align: center; margin-top: 30px; }
+main#mainContent section#confirm p { margin-bottom: 30px; }
+main#mainContent section#complate { height: 1000px; }
+
+main#mainContent section#confirm form.contactForm table.formTable tr td:last-child input, 
+main#mainContent section#confirm form.contactForm table.formTable tr td:last-child textarea,
+main#mainContent section#confirm form.contactForm table.formTable tr td:last-child select { border: none; background-color: #eee; }
+
+main#mainContent section#confirm form.contactForm #confirmBtnContainer { overflow: hidden; padding: 0 185px; }
+main#mainContent section#confirm form.contactForm #confirmBtnContainer .btnSend,
+main#mainContent section#confirm form.contactForm #confirmBtnContainer .btnBack { 
+	float: left;
+	width: 300px;  
+	line-height: 30px;
+	padding: 25px 0;
+} 
+main#mainContent section#confirm form.contactForm #confirmBtnContainer .btnBack {  
+	background-color: #f42534;
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	background-image: url(../../img/pre_white_btn_nav_bg.png);
+	background-repeat: no-repeat;
+	background-position: 5% center;
+	margin-right: 30px;
+	-moz-transition: all 0.4s ease-in;
+	-webkit-transition: all 0.4s ease-in;
+	-o-transition: all 0.4s ease-in;
+	-ms-transition: all 0.4s ease-in;
+}   
+
+main#mainContent section#confirm form.contactForm #confirmBtnContainer .btnBack:hover {
+	background-color: #333;
+	color: #fff;  
+	background-image: url(../../img/pre_red_btn_nav_bg.png);
+}
+
+/*------------------- smartphone ---------------*/
+@media only screen and (max-width: 750px) {
+
+	input, textarea {
+	    border-radius: 0;
+	    -webkit-appearance: none;
+	}
+	select { border-radius: 0; }
+	main#mainContent section#formTabs {
+		padding: 0;
+	}
+
+	main#mainContent section#formTabs h3 { padding-bottom: 15px; }
+	main#mainContent section#formTabs h3:before { left: 42%; width: 15%; }
+	main#mainContent section#formTabs h3 span { font-size: 20px; line-height: 20px; }
+
+	main#mainContent section#formTabs .tabContent .tab > p { font-size: 16px; margin: 20px 0 10px; }
+
+	main#mainContent section#formTabs #tab02 h3 span { line-height: 20px; }
+
+	
+	table.formTable {  
+		padding: 0;
+		border-spacing: 0 15px;
+		margin-bottom: 5px;
+	}
+
+	table.formTable tr td,
+	table.formTable tr td:first-child,
+	table.formTable tr td:last-child {
+		display: block;
+		width: 100%;
+		font-size: 15px;
+		padding: 0; 
+	}
+
+	table.formTable tr td:first-child {
+		text-align: center;
+		font-size: 16px;
+		background-color: #eee;
+		margin-bottom: 10px;
+		padding: 7px 0;
+	}
+
+	table.formTable tr td:last-child input, table.formTable tr td:last-child textarea {
+		padding: 7px 5px;
+	}
+
+	/*--------------------- tab04 ----------------------*/
+	main#mainContent section#formTabs #tab04 table.formTable tr td select { padding: 3px 5px; }
+	main#mainContent section#formTabs #tab04 table.formTable tr:first-child td:last-child input { margin-right: 7%; }
+	main#mainContent section#formTabs #tab04 table.formTable tr td#birthDate select { margin-left: 5%; }
+
+
+	
+	.infoRequired {
+		font-size: 14px;
+		padding: 2px 3px;
+		margin-left: 5px;
+	}
+
+	.btnSend {
+		width: 100%;
+		padding: 10px 0;
+		font-size: 16px;
+		background-image: url(../../img/white_arrow_bg.png);
+		background-size: 25px 12px;
+	}
+	.btnSend:hover { background-image: url(../../img/red_arrow_bg.png); }
+
+	.tdPC { display: none !important; }
+
+	/*---------------------- complate ------------------*/
+	main#mainContent section#confirm, main#mainContent section#complate { padding: 30px 10px; }  
+	main#mainContent section#confirm  h3 span, main#mainContent section#complate h3 span { 
+		font-size: 20px; 
+		line-height: 25px; 
+		padding-bottom: 20px; 
+	}
+	main#mainContent section#confirm p, main#mainContent section#complate p { margin-top: 15px; font-size: 16px; }
+	main#mainContent section#complate { height: 500px; }
+
+	main#mainContent section#confirm form.contactForm table.formTable tr td:last-child input, 
+	main#mainContent section#confirm form.contactForm table.formTable tr td:last-child textarea,
+	main#mainContent section#confirm form.contactForm table.formTable tr td:last-child select { background-color: #fff; }
+
+	main#mainContent section#confirm form.contactForm #confirmBtnContainer { padding: 0; }
+	main#mainContent section#confirm form.contactForm #confirmBtnContainer .btnSend, 
+	main#mainContent section#confirm form.contactForm #confirmBtnContainer .btnBack {
+		width: 49%;
+		line-height: 16px;
+		padding: 12px 0;
+	}
+	main#mainContent section#confirm form.contactForm #confirmBtnContainer .btnBack { 
+		margin-right: 2%; 
+		font-size: 16px;
+		background-image: url(../../img/sp_pre_white_arrow_bg.png); 
+		background-size: 25px 12px;
+	}
+	main#mainContent section#confirm form.contactForm #confirmBtnContainer .btnBack:hover { background-image: url(../../img/sp_pre_red_arrow_bg.png);  }
+
+}

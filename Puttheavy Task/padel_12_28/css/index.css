@@ -1,0 +1,139 @@
+/*----------------- h3 ----------------*/
+.home h3 { font-family: 'Open Sans Condensed', sans-serif; padding-bottom: 20px; }
+.home h3 span { font-size: 40px; line-height: 30px; }
+
+
+/* ------------- campaign --------------- */
+main#mainContent section.campaignWrapper { 
+	padding: 40px 0; 
+	overflow: hidden;
+}
+main#mainContent section.campaignWrapper a { float: left; }
+main#mainContent section.campaignWrapper a:first-child { margin-right: 20px; }
+main#mainContent section.campaignWrapper a:hover { opacity: .8; }
+
+/* -------------------- news and about ----------------- */
+main#mainContent section#newsAndAbout { overflow: hidden; }
+main#mainContent section#newsAndAbout article { 
+	float: left; 
+	width: 50%; 
+	text-align: center; 
+}
+
+main#mainContent section#newsAndAbout article.newsWrapper { background-image: url('../img/news_bg.png'); }
+main#mainContent section#newsAndAbout article.newsWrapper h3:before { left: 42%; width: 16%; }
+main#mainContent section#newsAndAbout article.newsWrapper ul.list01 { margin: 20px 10% 0;  }
+
+/* ------------ about ----------------*/
+main#mainContent section#newsAndAbout article.aboutWrapper { background-image: url('../img/about_bg.png'); }
+main#mainContent section#newsAndAbout article.aboutWrapper h3:before { left: 39%; width: 21%; }
+main#mainContent section#newsAndAbout article.aboutWrapper ul { margin: 20px 0 63px; }
+main#mainContent section#newsAndAbout article.aboutWrapper ul li { margin-bottom: 5px; }
+main#mainContent section#newsAndAbout article.aboutWrapper ul li:last-child { margin-bottom: 0; }
+main#mainContent section#newsAndAbout article.aboutWrapper ul li a{ 
+	background-image: url('../img/about_link_bg.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	margin: 0 auto; 
+	width: 40%;
+} 
+main#mainContent section#newsAndAbout article.aboutWrapper ul li a:hover { text-decoration: underline; }
+
+/*--------------- place ------------*/
+main#mainContent section#placeWrapper {
+	background-image: url('../img/place_bg.png');
+	text-align: center;
+	padding: 60px 0;
+}  
+main#mainContent section#placeWrapper h3:before { left: 46%; width: 8%; }
+main#mainContent section#placeWrapper ul.list01 { margin: 20px 28% 0;  }
+
+/* ---------------- lesson -----------------*/
+main#mainContent section a.admission, main#mainContent section a.event { 
+	width: 50%; 
+	float: left; 
+	text-align: center; 
+	padding: 60px 0;
+	text-decoration: none;
+}
+
+main#mainContent section a.admission h3:before { left: 42%; width: 16%; }
+main#mainContent section a.event h3:before { left: 41.5%; width: 16.5%; }
+
+main#mainContent section a.admission:hover .btnMore, main#mainContent section a.event:hover .btnMore {
+	background-color: #333;
+  	border-color: #333;
+}
+
+main#mainContent section a.admission {
+	background-image: url('../img/lesson_bg.png');
+}
+
+
+/* ---------------- event ---------------*/
+main#mainContent section a.event {
+	background-image: url('../img/event_bg.png');
+	
+}
+
+
+/* ------------------ gallery --------------- */
+main#mainContent section#galleryCollection {
+	padding: 60px 0 40px;
+	background-color: #fffcef;
+	overflow: hidden;
+}
+
+main#mainContent section#galleryCollection .gallery {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 235px;
+	height: 235px;
+	overflow:  hidden;
+}
+main#mainContent section#galleryCollection .gallery a{
+	width: 235px;
+	height: 235px;
+	display: inline-block;
+	overflow:  hidden;
+}
+main#mainContent section#galleryCollection .gallery img{
+	width: 300px;
+	height: 100%;
+	line-height: 0;
+	text-align:  center;
+}
+main#mainContent section#galleryCollection .gallery:nth-child(4n) {
+	margin-right: 0;
+}
+main#mainContent section#galleryCollection .gallery iframe {
+	width: 100%;
+	height: 235px;
+}
+
+/*-------------------- faq ------------------*/
+main#mainContent section#faqWrapper {
+	background-color: #e9e6db;
+	padding: 100px 0;
+	text-align: center;
+}
+
+main#mainContent section#faqWrapper a.faqBtn { 
+	display: inline-block;
+	text-decoration: none;
+	background-color: #fff;
+	color: #333;
+	border: 2px solid #333;
+	font-size: 20px;
+	padding: 15px 188px;
+	background-image: url('../img/faq_btn_bg.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+main#mainContent section#faqWrapper a.faqBtn:hover {
+	background-color: #333;
+	border-color: #333;
+	color: #fff;
+}

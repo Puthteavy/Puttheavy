@@ -1,0 +1,191 @@
+main#mainContent section#companyTabs { padding: 60px 0; }
+
+main#mainContent section#companyTabs .tabs { padding: 0 10px; }
+
+main#mainContent section#companyTabs h3 {
+	color: #333; 
+}
+
+main#mainContent section#companyTabs h3:before {
+	border-color: #f42534;
+	left: 45%;
+	width: 10%;
+} 
+
+main#mainContent section#companyTabs .tabLinksWrapper { margin-bottom: 10px; }
+main#mainContent section#companyTabs .tabLinks { margin: 0; }
+main#mainContent section#companyTabs .tabLinks:nth-child(2) { margin: 0 5px; }
+main#mainContent section#companyTabs .tabLinks li { margin-right: 5px; }
+main#mainContent section#companyTabs .tabLinks li:last-child { margin-right: 0; }
+main#mainContent section#companyTabs .tabLinks:nth-child(2) li:first-child a {  
+	line-height: 20px;
+	font-size: 19px;
+	padding: 25px 0;
+}
+main#mainContent section#companyTabs .tabLinks a {
+	width: 192px;
+}  
+
+main#mainContent section#companyTabs .tabContent { padding-left: 20px; padding-right: 20px; } 
+main#mainContent section#companyTabs .tabContent .companyContent { padding-top: 30px; } 
+main#mainContent section#companyTabs .tabContent .companyContent h5 {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 20px;
+	color: #00c1de;
+} 
+main#mainContent section#companyTabs .tabContent .companyContent p {  
+	text-align: left;
+	margin-top: 25px;
+	font-size: 16px;
+}
+
+table.tableList {
+	border: none;
+	border-top: 1px solid #ccc;
+	margin: 40px 0 0;
+}
+
+table.tableList tr td {
+	text-align: left;
+	vertical-align: top;
+	font-size: 16px;
+	overflow: hidden;
+}
+table.tableList tr td span { float: left; }
+table.tableList tr td span:first-child { line-height: 23px; }
+
+table.tableList tr td:first-child { width: 15%;}
+
+.magazine {
+	background-color: #f7af00;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 4px;
+	margin-left: 13px;
+}
+.companyContent img.companyContentImg {
+    margin-top: -50px;
+   }
+
+/*---------------------- tab02 -------------------*/
+main#mainContent section#companyTabs .tabContent #tab02 > p { text-align: right; margin-top: 30px; }
+
+/*---------------------- tab04 -------------------*/
+main#mainContent section#companyTabs .tabContent #tab04 {
+
+}
+main#mainContent section#companyTabs .tabContent .companyContent table{
+	border:none;
+}
+main#mainContent section#companyTabs .tabContent .companyContent table tr{
+	border:none;	
+}
+main#mainContent section#companyTabs .tabContent .companyContent table tr td{
+	text-align: left;
+	padding:10px;
+	background-color: #fff;
+	border:none;
+} 
+main#mainContent section#companyTabs .tabContent .companyContent table tr th{
+	text-align: right;
+	padding-right: 10px;
+}
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl{
+	overflow: hidden;
+	display: block;
+	text-align: center;
+
+}
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl p{
+	text-decoration: underline;
+	padding-bottom: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl ul{
+	text-align:center;
+}
+
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl ul li{
+	display:inline;
+	text-align: center;
+	margin-bottom: 14px;
+	line-height: 2em;
+}
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl ul li a{
+	text-decoration: underline;
+	display:inline;
+	line-height: 1.3em;
+	overflow:  hidden;
+}
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl a{
+	text-align: left;
+	display: inline-block;
+	color: #333;
+	padding-bottom: 20px;
+	margin-right: 10px;
+	text-decoration: none;
+	font-size: 17px;
+}
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl a span{
+	/*border-bottom: 1px solid #232121;*/
+	/* text-decoration: underline; */
+}
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl ul li:after{
+	content: '|';
+    font-size: 20px;
+    padding-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+
+}
+main#mainContent section#companyTabs .tabContent .companyContent .companyUrl a:last-child:after{
+	content: "";
+}
+/*------------------- smartphone ---------------*/
+@media only screen and (max-width: 750px) {
+	 .companyContent img.companyContentImg{
+	 	width: 100%;
+	 	padding-top: 25px;
+   }
+
+	main#mainContent section#companyTabs {
+		padding: 20px 10px;
+	}
+	main#mainContent section#companyTabs .tabs { padding: 0; }
+	main#mainContent section#companyTabs .tabLinksWrapper {
+		background-color: #fff;
+		padding: 0;
+	}
+	main#mainContent section#companyTabs .tabLinks li { margin-right: 2%; display: table; }
+	main#mainContent section#companyTabs .tabLinks:nth-child(2) { margin: 2% 0; }
+	main#mainContent section#companyTabs .tabLinks a { width: 100%; border: 2px solid #333; display: table-cell; vertical-align: middle; }
+	main#mainContent section#companyTabs .tabLinks li.active a, main#mainContent section#companyTabs .tabLinks li.active a:hover { border-color: #00c1de; }
+	main#mainContent section#companyTabs .tabLinks:nth-child(2) li:first-child a {
+		font-size: 12px;
+		padding: 12px 0;
+	}
+	main#mainContent section#companyTabs .tabLinks:nth-child(3) li { width: 100%; }
+
+	main#mainContent section#companyTabs .tabContent { padding: 20px 0; }
+	main#mainContent section#companyTabs .tabContent .companyContent { padding-top: 15px; } 
+	main#mainContent section#companyTabs .tabContent .companyContent h4 { font-size: 16px; }
+	main#mainContent section#companyTabs .tabContent .companyContent h5 { font-size: 16px; margin-top: 14px; }
+	main#mainContent section#companyTabs .tabContent .companyContent p { font-size: 16px; margin-top: 14px; }
+
+	main#mainContent section#companyTabs .tabContent #tab02 > p { margin-top: 15px; }
+
+	table.tableList { margin-top: 20px; }
+	table.tableList tr td:first-child { width: 30%;}
+	.magazine { font-size: 12px; padding: 0 3px; margin-left: 2%; }
+	main#mainContent section#companyTabs .tabContent .companyContent .companyUrl a{font-size: 14px;
+    float: none;padding-bottom: 15px; margin-right: 5px;text-decoration: none;}
+    main#mainContent section#companyTabs .tabContent .companyContent .companyUrl a:after{
+    	content: "";padding-left: 5px;
+    }
+
+}
+
+}

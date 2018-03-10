@@ -1,0 +1,154 @@
+#faq .faqSection .contentWidth{width: 960px;}
+main#mainContent section.faqSection { padding: 60px 0; }
+main#mainContent section.faqSection ul {
+	list-style-type: none;
+	margin-top: 30px;
+}
+main#mainContent section.faqSection:nth-child(even) { background-color: #e9e6db; }
+
+
+main#mainContent section h3 span {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+	color: #333;
+	font-size: 24px;
+	line-height: 24px;
+	padding-bottom: 20px;
+}
+
+main#mainContent section h3:before {
+	border-color: #f42534;
+}
+
+main#mainContent section ul li span { line-height: 16px; }
+main#mainContent section ul li .faqNumber {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	margin-right: 10px;
+	color: #f42534;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+main#mainContent section ul li .faqText {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif; 
+	font-size: 16px;
+
+}
+
+/*--------------------- digest ------------------*/
+main#mainContent section#digest ul li { margin-bottom: 10px; }
+main#mainContent section#digest ul li:last-child { margin-bottom: 0; }
+
+main#mainContent section#digest ul li a {
+	background-color: #fff;
+	color: #333; 
+	padding: 20px 10px; 
+	position: relative;
+}
+
+main#mainContent section#digest ul li a:before { 
+	font-family: 'Open Sans Condensed', sans-serif;
+	position: absolute; 
+	top: 20px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #f42534;
+	left: 10px;
+	letter-spacing: 1px;
+}
+main#mainContent section#digest ul li:first-child a:before { content: "Q1."; }
+main#mainContent section#digest ul li:nth-child(2) a:before { content: "Q2."; }
+main#mainContent section#digest ul li:nth-child(3) a:before { content: "Q3."; }
+main#mainContent section#digest ul li:nth-child(4) a:before { content: "Q4."; }
+main#mainContent section#digest ul li:nth-child(5) a:before { content: "Q5."; }
+main#mainContent section#digest ul li a .faqText { 
+	display: block; 
+	padding-left: 30px; 
+	line-height: 24px;
+}
+
+main#mainContent section#digest ul li a:hover { 
+	background-color: #333;
+	color: #fff;
+} 
+main#mainContent section#digest ul li a:hover .faqText { text-decoration: underline; }
+main#mainContent section#digest ul li a:hover:before, main#mainContent section#digest ul li a:hover i { color: #fff; }
+
+/*------------------- faq 01 ---------------------*/
+main#mainContent section ul.faqList li {  
+	border-bottom: 2px solid #ccc;
+	padding: 28px 10px 25px; 
+	position: relative;
+}
+main#mainContent section ul.faqList li:first-child { padding-top: 0; }
+main#mainContent section ul.faqList li:last-child { padding-bottom: 0; border-bottom: none; }
+
+main#mainContent section ul.faqList li .faqQuestion { margin-bottom: 13px; position: relative; } 
+main#mainContent section ul.faqList li .faqQuestion .faqText { font-weight: bold; }
+
+main#mainContent section ul.faqList li .faqAnswer { position: relative; display: block; }
+main#mainContent section ul.faqList li .faqQuestion:before,
+main#mainContent section ul.faqList li .faqAnswer:before { 
+	font-family: 'Open Sans Condensed', sans-serif;
+	position: absolute; 
+	top: 1px;
+	font-weight: bold;
+	font-size: 18px;
+	left: 1px;
+	letter-spacing: 1px;
+}
+main#mainContent section ul.faqList li .faqQuestion:before { color: #f7af00; }
+main#mainContent section ul.faqList li .faqAnswer:before { color: #00c1de; }
+main#mainContent section ul.faqList li .faqQuestion .faqText,
+main#mainContent section ul.faqList li .faqAnswer .faqText { 
+	display: block; 
+	padding-left: 30px; 
+	line-height: 24px;
+}
+/*---------------------------- faq question list ---------------------------*/
+main#mainContent section ul.faqList li:first-child .faqQuestion:before { content: "Q1."; }
+main#mainContent section ul.faqList li:nth-child(2) .faqQuestion:before { content: "Q2."; }
+main#mainContent section ul.faqList li:nth-child(3) .faqQuestion:before { content: "Q3."; }
+main#mainContent section ul.faqList li:nth-child(4) .faqQuestion:before { content: "Q4."; }
+main#mainContent section ul.faqList li:nth-child(5) .faqQuestion:before { content: "Q5."; }
+/*---------------------------- faq answer list ---------------------------*/
+main#mainContent section ul.faqList li:first-child .faqAnswer:before { content: "A1."; }
+main#mainContent section ul.faqList li:nth-child(2) .faqAnswer:before { content: "A2."; }
+main#mainContent section ul.faqList li:nth-child(3) .faqAnswer:before { content: "A3."; }
+main#mainContent section ul.faqList li:nth-child(4) .faqAnswer:before { content: "A4."; }
+main#mainContent section ul.faqList li:nth-child(5) .faqAnswer:before { content: "A5."; }
+
+@media only screen and (max-width: 750px) {
+	
+	main#mainContent section.faqSection { padding: 30px 10px; }
+	main#mainContent section.faqSection ul { margin-top: 20px; }
+	
+	/*----------------- digest -----------------*/
+	main#mainContent section#digest ul li { margin-bottom: 5px; }
+	main#mainContent section#digest ul li a { padding: 10px 20px 10px 10px; }
+	main#mainContent section#digest ul li a:before { 
+		top: 10px;
+	}
+	
+	main#mainContent section#digest ul li a i {
+		position: absolute;
+		right: 10px;
+		top: 35%;
+		color: #f42534;
+		font-size: 20px;
+	}
+
+
+	/*------------------- faq list -------------*/
+	main#mainContent section ul.faqList li {
+		padding: 15px 0;
+		overflow: hidden;
+		border-bottom: 1px solid #ccc;
+	}
+	main#mainContent section ul.faqList li i {
+		float: right;
+		color: #f42534; 
+		font-size: 20px;
+	}
+	main#mainContent section ul.faqList li .faqQuestion { margin-bottom: 0; }
+	main#mainContent section ul.faqList li .faqAnswer { display: none; margin-top: 5px; margin-bottom: 10px; }
+}

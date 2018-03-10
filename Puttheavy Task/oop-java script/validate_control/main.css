@@ -1,0 +1,40 @@
+.content{
+    width:980px;
+    margin:0 auto;
+    padding:20px;
+}
+table.mailform {
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+table.mailform tr {
+    border-bottom-width: 1px;
+
+}
+.req:before{
+    content: '*';
+    color: indianred;
+    margin-right: 10px;
+}
+.req{
+    margin-right: 20px;
+
+}
+.btn_submit{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.btn{
+    padding: 10px;
+    background-color: #1f648b;
+    color: #FFFFFF;
+    width: 100px;
+    height:40px;
+    float: left;
+    margin-right: 10px;
+}
+.mfp_err{
+    display: none;
+}

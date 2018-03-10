@@ -1,0 +1,96 @@
+.loginWrapper{
+	background: url(../images/pc/bicycle_street_post_114390_2048x1152.jpg) no-repeat;
+	height: 974px;
+	margin: 0;
+	padding:0;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+.bgLogin{
+	background-color: rgba(6, 6, 6, 0.23);
+	height: 974px;
+}
+.form{
+	width: 650px;
+	margin:0 auto;
+	padding-top: 200px;
+	overflow: hidden;
+}
+.form h1{
+	font-size: 30px;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	text-align: center;
+}
+.bodyform{
+
+	padding: 50px 10px 30px 10px;
+}
+.bodyform table tr th label{
+	font-size: 20px;
+	padding-right: 30px;
+	padding-top: 20px;
+	color: rgba(238, 238, 238, 0.78);
+}
+.bodyform table tr{
+	margin-top: 23px;
+}
+.inputname,.inputpass{
+	width: 355px;
+	height: 44px;
+	margin-top: 8px;
+	padding-left:30px;
+	background-color: rgba(6, 6, 6, 0.06);
+	border: none;
+}
+input[type='text'].inputname{
+	background-image: url(../images/pc/avatar.png);
+	background-position: 5px 13px;
+	background-repeat: no-repeat;
+
+}
+input[type='text'].inputpass{
+	background-image: url(../images/pc/padlock.png);
+	background-position: 5px 13px;
+	background-repeat: no-repeat;
+
+}
+input::placeholder {
+	color: rgba(238, 238, 238, 0.78);
+}
+input[type='checkbox'].check{
+
+	width: 18px;
+	height: 18px;
+	background-color: rgba(6, 6, 6, 0.06);
+}
+.checktext{
+	padding-bottom: 20px;
+	padding-left: 10px;
+	color: #fff;
+	font-weight: normal;
+}
+.btnlogin{
+	width: 139px;
+	margin:40px auto 10px auto;
+}
+.btnlog{
+	width: 131px;
+	padding: 10px 5px 10px 5px;
+	background-color: rgba(77, 77, 77, 0.99);
+	color: #fff;
+	border:1px solid grey;
+	font-size: 17px;
+}
+
+.signin a{
+	color: rgba(238, 238, 238, 0.78);
+	font-size: 15px;
+	text-align: center;
+}
+.error_ms,.error_ps{
+	font-size:12px;
+	display: none;
+}
+

@@ -1,0 +1,27 @@
+main#mainContent section#newsSection{ padding: 60px 0; }
+main#mainContent section#newsSection .newsContent{
+	width: 960px;
+	margin-bottom: 50px;
+	display: block;
+	margin-top: 20px;
+    overflow: hidden;
+
+}
+main#mainContent section#newsSection .newsContent ul.list01 li a span.info{ 
+	display:inline-block;
+    border-bottom:1px solid #999999;
+    padding-bottom:1px;
+    padding-top: 5px;
+}
+main#mainContent section#newsSection .newsContent ul.list01 li a:hover span.info{text-decoration:none;}
+main#mainContent section#newsSection .newsContent ul.list01 li a:hover { background-color: #fff; color: #333;  text-decoration:none;}
+main#mainContent section#newsSection .newsContent ul.list01 li{    margin-bottom: 5px;border-bottom: 1px dotted; padding-bottom: 10px;}
+
+@media only screen and (max-width: 750px) {
+	main#mainContent section#newsSection .newsContent ul.list01 li a span.info{
+		
+	}
+	main#mainContent section#newsSection .newsContent ul.list01 li a span.date{
+		display: inherit;
+	}
+}

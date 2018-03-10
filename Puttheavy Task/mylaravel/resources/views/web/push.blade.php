@@ -1,0 +1,10 @@
+@push('js1')
+    <script>
+        alert(1);
+    </script>
+@endpush
+@push('js2')
+    <script>
+        alert(2);
+    </script>
+@endpush

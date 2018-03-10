@@ -1,0 +1,370 @@
+Laravel Sample
+----------- -------------
+- installation
+- create database
+- create model => connect to table // php artisan make:model test -m
+  -m is migration
+- migration check problem
+- make controller
+- create action in controller
+-
+-
+---------------------------------------------------------------------------
+- Make Model:
+php artisan make:model Models/Admin/Post -m // -m mean migration table of Model
+add : protected $table ='posts'; // to make sure that this Post model bind with posts table
+- create controller
+php artisan make:controller Admin/PostController
+ - Create action in controller (function in controller)
+  1 action = 1 page , some function need view some no need
+
+ - create view
+ - create route
+ - add admin template to laravel
+ - test form helper
+ https://laravelcollective.com/docs/5.4/html
+ - after add form  => make code in controller
+=================================================
+function index(Request $request){ }
+// Request is parameter of action , to get all value in action
+============Request ===================
+
+========= Response  ========================
+=======================================================
+<form action="{{url('/admin/post-save')}}" method="post" enctype="multipart/form-data">
+
+        {{--add token for encrypt code for every form--}}
+        {!! csrf_field() !!}
+
+</form>
+================================
+// form helper
+
+ - library: in class
+ - helper : is independent function
+
+ {!! Form::open(['url' => 'test','method' => 'post','file'=> true]) !!}
+
+ {!! Form::close() !!}
+ // file is for upload file as image or file
+
+======================
+migration  problem
+========================
+- add to AppServiceProvider.php file
+use Illuminate\Support\Facades\Schema;
+
+function boot()
+{
+    Schema::defaultStringLength(191);
+}
+php artisan migrate:fresh
+php artisan migrate
+====================================
+if problem with :: SQLSTATE[HY000] [1045] Access denied for user 'homestead'@'localhost' (using password: YES) (SQL: select * from `posts`)
+===========
+- run php artisan config:clear
+then start service again
+=========================================================================
+Jquery : is javascript framework (selector is most powerful in jquery )
+===========================================================================
+Ajax:  is get data from from 1 to 1 without refresh page
+
+- ( request and response )
+- process background no refresh page
+===========
+user request => to server
+server response => client
+(as html and json )
+html : (row) done result (prepare already ) // slow ,big space (client)
+json : (data) not yet prepare // fast (server) -> but slow with (client)
+=======================================
+function(){
+ $.ajax({
+  url: // location for request to  // path for ajax work
+  async : // false : sending one by one and waiting all complete ------ true  : not waiting
+  data: // data sending to server  (key: value)
+  error: // error
+  dataType : //(transportation) json or html upto type of work
+  success : // after success what to do next
+  type: // post or get  = method in form
+     // need _token
+
+
+ });
+}
+==========
+
+
+===================================
+json : is a DATA
+db -> server (json)
+   <-
+
+server (prepare data as json ) then send to -> client
+=============================================
+
+all input form are .val() in jquery
+===========================
+Session && Middleware
+===================================================================
++ session : (store on server) global viable that can access 1 page to other page that working
+(use all page )
+== use for ======
+
+- use for remember even refresh page
+- use for remember login ;
+- add to cart
+-need to know =====(create , destroy , how to using )
+=======================
+
+(this session in laravel store on)
+- RAM  server // fast  but  easy stuck
+- File
+- database (most use)
+-- how to store on database
+
+1 : php artisan session:table // create table for session
+2 : php artisan migrate // migrate session to be table
+3 : in .env  SESSION_DRIVER = database
+===========
+create session
+========
+storing data
+vai request instance
+- $request->session()->put('key','value');
+vai global helper
+- session(['key'=>'value']);
+$request->session()-> flash('status','task was success'); // remember next request
+// remember temporary and can destroy by themselve
+
+$request->session()->reflash(); //  remember until page finish
+$request->session()->keep(['username','email']); // remember and keep one if they need then continou sent
+============
+Destroy
+===========
+- $request->session()->forget('key'); //  remove one by one
+- $request->session()->flush(); // remove all
+(logout , check out => auto remove session )
+
+=======
+Using
+=========
+- retrieving data
+$value = $request->session()->get('key','default');
+- retrieve a piece of data from session
+$value = session('key');
+- specifying a default value
+$value = session('key','default');
+
+===================================
+
+========================
++cookie: store on client
+==============================
+Middleware
+=================================================
+- central agency (security guard )
+- check between A and B
+Route : check only url
+middleware : check process , or other rule
+for (login , rule , permission)
+set rule for user login
+---- ---
+==================================================
+Middleware : can put in Route and Controller
+==========
+
+create middleware
+---------------------
+php artisan make:middleware Name
+
+Assigning Middleware To Routes ( Kernel.php )
+protected $routeMiddleware = [
+    'xxx' => \App\Http\Middleware\xxx::class
+];
+
+===========
+Middleware : before middleware and after middleware route and controller
+after: trance section rollback (doing and then check ) // check after finished
+before : (check before doing)  (login mostly use before) // permission
+
+
+============
+category
+============
+:: is a static so , all method of it need to create with static
+$result = Post::paginate(10);
+-----------
+Recursive function : is function that create  and use by self
+----------
+$result = Post::where('parent',$parent)->get();
+also can ::
+Post::all();
+Post::find(id);
+Post::paginate();
+
+get() // array of object
+// to get array of object  use count
+
+
+=============
+Jquery
+==========================
+$('.a').on('click',function(){});// happen so long
+
+$('body').delegate('.a','click',function(){
+// happen at runtime ,
+});
+===========================
+ajax+ jquery scroll
+============================
+$('.a').trigger('click');// click auto
+
+$(this) : mean they are in the parent
+.val() // for input form
+
+========================================
+Image intervention
+========================================
+- install
+composer  require intervention/image
+- config : app
+$provider[] and $aliases []
+
+- create helper
+  function or class that we create for using many time
+
+php artisan make:provider HelperServiceProvider
+added this snippet
+
+public function register(){
+
+foreach(glob (app_path().'/Helpers/*.php') as $filename){
+require__once($filename);
+}
+
+}
+getClientOriginalExtension() // method to get extension
+
+================================================================
+Website problem
+Server  :
+Internet  :
+Client code : Structure code , how process code  (image size , optimize code , query data )
+Front end and backend process
+caches :  also help to make faster (caches serve , caches client )
+=========***********************************===================
+FrontEnd
+=========================================
+- make model don't need migration
+  => point to posts table (most use)
+  =>
+- make controller
+==============================
+
+
+
+===============================================================
+flow:
+post
+post tag
+category
+page
+
+==============================================================
+database
+----
+migration:rollback or refresh
+------------------------------------
+page
+========================
+- also fix or dynamic
+- on front mostly use get
+----------------------------
+===============================================
+Login
+================================================
+1. make with their own user and register
+---------
+Role : // fix and dynamic
+
+ - User
+ - admin
+ - superadmin
+-----------------------
+  Create user :
+  - role
+  -
+
+========================
+login : session and middleware
+====================================
+- create table
+- table field
+- migration
+
+- create model and controller
+- form input (insert to database )
+
+================
+after
+- create middleware
+- session get from form login
+
+
+
+
+=================================================
+Eloquent Model : interact , query data from database , insert , deleted
+===============================
+- create model
+======================
+Create Validation
+===================
+ $this->validate($request ,[
+            'title'=>'required|max:255|min:3',
+            'body'=>'required|min:5',
+            'active'=>'required|min:1'
+        ]);
+        ================================
+php artisan make:request StoreBlogPost
+=====================
+Eloquent Relationship ... of laravel
+================================
+
+table : user
+==================================
+
+- add foreign key that related with table user
+- in user model point reference to article model
+- in article model point reference to user model
+- run auth of laravel that is the basic login log out in laravel
+ php artisan make:auth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

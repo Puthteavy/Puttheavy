@@ -1,0 +1,92 @@
+/*----- Tabs -----*/
+
+/*----- Tab Links -----*/
+.tabLinks {
+    margin-bottom: 10px;
+    float: left; 
+}
+.tabLinks:first-child { margin-right: 13px; }
+/* Clearfix */
+.tabLinksWrapper:after, .tabLinks:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.tabLinks li {
+    float:left;
+    list-style: none;
+    text-align: center;
+    display: table;
+    margin-right: 13px;
+}
+
+.tabLinks li:last-child { margin-right: 0; }
+ 
+.tabLinks a { 
+    width: 240px;
+    height: 90px;
+    border:1px solid #333;
+    background-color: #fff;
+    display: block;  
+    font-size: 18px;  
+    color: #333;
+    /*line-height: 90px;*/
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tabLinks a:hover {
+    background-color: #333;
+    color: #fff;
+    text-decoration: underline;
+}
+ 
+li.active a, li.active a:hover {
+    background-color: #00c1de;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tabLinks li a.twoLine { padding: 0 48px; line-height: 22px; }
+/*----- Content of Tabs -----*/
+.tabContent {
+    padding: 60px 0; 
+    border: 1px solid #333;
+    background:#fff;
+}
+
+.tab { display: none; }
+
+.tab.active { display: block; }
+
+@media only screen and (max-width: 750px) {
+    .tabLinksWrapper {
+        margin-bottom: 0;
+        background: #e9e6db;
+        padding: 15px 10px;
+    }
+    .tabLinks { width: 100%; }
+    .tabLinks:first-child { margin-bottom: 2%; margin-right: 0; }
+    .tabLinks:last-child { margin: 0; }
+    .tabLinks:last-child li:first-child a { font-size: 12px; }
+    .tabLinks li {
+        margin-right: 2%;
+        width: 49%;
+    }
+    .tabLinks a {
+        width: 100%;
+        height: 45px;
+        font-size: 14px; 
+        line-height: 45px; 
+    }
+    
+    .tabLinks li a.twoLine { padding: 0; font-size: 13px; }
+
+    .tabContent {
+        padding: 30px 10px;
+        border: none;
+    }
+}
+

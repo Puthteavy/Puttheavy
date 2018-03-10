@@ -1,0 +1,201 @@
+
+
+@media only screen and (max-width: 750px) {
+	
+	body.menu-opened {
+	    overflow: hidden;
+	}
+	
+	/*--------- sp menu btn -------*/
+	.ofonts {
+	    font-family: 'Oswald', sans-serif;
+	    font-weight: 400;
+	    letter-spacing: .1em;
+	} 
+	#humb-btn {
+	    position: relative;
+	    width: 50px;
+	    height: 50px; 
+	    padding: 0px 7px !important;
+	    z-index: 3;
+	    background: #f42534;
+	}
+	.humb-bar {
+	    position: relative;
+	    width: 100%;
+	    height: 100%;
+	}
+	.humb-bar:before, .humb-bar:after, .humb-bar span {
+		display: block;
+	    content: '';
+	    position: absolute;
+	    width: 100%;
+	    height: 3px;
+	    left: 0;
+	    background: #fff;
+	    -webkit-transition: top .2s, -webkit-transform .2s;
+	    transition: top .2s, -webkit-transform .2s;
+	    transition: transform .2s, top .2s;
+	    transition: transform .2s, top .2s, -webkit-transform .2s;
+	}	
+	.humb-bar:before { top: 7px; }
+	.humb-bar span { top: 17px; }
+	.humb-bar:after { top: 27px; }
+	#humb-btn > span {
+		position: absolute;
+	    width: 100%;
+	    bottom: 0px;
+	    left: 1px;
+	    text-align: center;
+	    color: #fff !important;
+	}
+
+	#humb-btn > span > span, #humb-btn > span:after {
+		-webkit-transition: opacity .2s;
+    	transition: opacity .2s;
+	}
+
+	#humb-btn > span:after { opacity: 0; }
+
+	.menu-opened .humb-bar span, .menu-opened .humb-bar:before {
+		top: 45%;
+		left: 4px;
+		width: 75%;
+	    margin-top: -5px;
+	    border-radius: 5px;
+	}
+	.menu-opened .humb-bar:before {     
+		-webkit-transform: rotate(45deg);
+    	transform: rotate(45deg); 
+    }
+    .menu-opened .humb-bar span {
+    	-webkit-transform: rotate(-45deg);
+    	transform: rotate(-45deg);
+    }
+    .menu-opened .humb-bar:after { opacity: 0; }
+    .menu-opened #humb-btn { background-color: #333; }
+
+    .menu-opened #humb-btn > span > span { opacity: 0; }
+	
+	.menu-opened #humb-btn > span:after {
+		display: inline-block;
+	    content: attr(data-menu);
+	    position: absolute;
+	    width: 100%;
+	    left: 0;
+	    opacity: 1;
+	}
+
+	#gnav-bg {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		height: 100vh;
+		top: 0;
+		right: 0;
+		background: rgba(0,0,0,0.5);
+		z-index: 1;
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		-webkit-transition: -webkit-transform .45s;
+		transition: -webkit-transform .45s;
+		transition: transform .45s;
+		transition: transform .45s, -webkit-transform .45s;
+		-webkit-transition-delay: .15s;
+		transition-delay: .15s;
+	}
+	#gnav {
+		position: fixed;
+	    width: 90%;
+	    height: 100%;
+	    height: 100vh;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    z-index: 2;
+	    -webkit-transform: translateX(100%);
+	    transform: translateX(100%);
+	    -webkit-transition: -webkit-transform .5s;
+	    transition: -webkit-transform .5s;
+	    transition: transform .5s;
+	    transition: transform .5s, -webkit-transform .5s;
+	}
+	#gnav > .inner {
+		position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    right: 0;
+	    padding-top: 80px;
+	    z-index: 2;
+	}
+	#gnav .scroll-container {
+		height: 100%;
+	    padding: 0 10px;
+	    overflow-y: auto;
+	    -webkit-overflow-scrolling: touch;
+	    -webkit-overflow-scrolling-overflow-scrolling: touch;
+	}
+
+	.menu-opened #gnav-bg, .menu-opened #gnav {
+		-webkit-transform: translateX(0);
+    	transform: translateX(0);
+	}
+
+	.menu-opened #gnav-bg {
+		-webkit-transition: -webkit-transform .35s;
+	    transition: -webkit-transform .35s;
+	    transition: transform .35s;
+	    transition: transform .35s, -webkit-transform .35s;
+	    -webkit-transition-delay: 0s;
+	    transition-delay: 0s; 
+	}
+	.menu-opened #gnav {
+		-webkit-transition-delay: 0s;
+    	transition-delay: 0s;
+	}
+
+	/*------------- navigation ----------*/
+	header .spMenu { 
+		text-align: center; 
+		margin-top: 20px; 
+	}
+	header .spMenu a.login,
+	header .spMenu a.reserveCoat {
+		font-size: 16px;
+		margin-bottom: 15px;
+		padding: 16px 0;
+		text-decoration: none;
+		display: block;
+	}
+	header .spMenu a.login {
+		border: 1px solid #333;
+		font-size: 16px;
+		color: #333;
+	}
+	header .spMenu a.reserveCoat {
+		color: #fff;
+		background-color: #f42534;
+		margin-bottom: 20px;
+	}
+	header .spMenu ul.menu {
+		text-align: center;
+		list-style-type: none;
+
+	}
+	header .spMenu ul.menu li {
+		width: 100%;
+		float: none;
+		border-bottom: 1px solid #333;
+		padding: 20px 0;
+	}
+	header .spMenu ul.menu li a { font-size: 22px; color: #333; }
+
+
+	/*-----------SNS--------------*/
+	header .spMenu #spHeaderSNS { margin-top: 20px; }
+	header .spMenu #spHeaderSNS a{ display: inline-block; margin-right: 20px; }
+	header .spMenu #spHeaderSNS a:last-child { margin-right: 0px; }
+	header .spMenu #spHeaderSNS a img { width: 45px; }
+
+}

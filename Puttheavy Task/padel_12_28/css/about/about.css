@@ -1,0 +1,173 @@
+main#mainContent section.aboutSection { padding: 60px 0; }
+main#mainContent section.aboutSection:nth-child(even) { background-color: #e9e6db; }
+main#mainContent section.aboutSection h3 { color: #333; }
+main#mainContent section.aboutSection h3:before { border-color: #f42534; left: 45%; width: 9%; }
+main#mainContent section.aboutSection p { font-size: 16px; word-wrap: break-word;margin-bottom: 30px; text-align: left;}
+main#mainContent section.aboutSection article { padding: 40px 0px 0; }
+
+/*------------------- what's padel -----------------*/
+article.whatContent p { margin-bottom: 30px; }
+.whatContent span{text-align: right;font-size: 16px;display: block;}
+
+/*------------------- enjoy point -----------------*/
+main#mainContent section#enjoyPoint .enjoyPointContent { margin-bottom: 80px; }
+main#mainContent section#enjoyPoint .enjoyPointContent:last-child { margin-bottom: 0; }
+main#mainContent section#enjoyPoint .enjoyPointContent .enjoyPointInfo { overflow: hidden; padding-top: 20px; }
+main#mainContent section#enjoyPoint .enjoyPointContent .enjoyPointInfo img, section#enjoyPoint .enjoyPointInfo p { float: left; }
+main#mainContent section#enjoyPoint .enjoyPointContent .enjoyPointInfo img { width: 42%; }
+main#mainContent section#enjoyPoint .enjoyPointContent:nth-child(even) .enjoyPointInfo img { margin-right: 2%; }
+main#mainContent section#enjoyPoint .enjoyPointContent:nth-child(odd) .enjoyPointInfo img { margin-left: 2%; }
+main#mainContent section#enjoyPoint .enjoyPointContent .enjoyPointInfo p { width: 56%; white-space: pre-line; padding: 0 10px; }
+.enjoyPointContainer > span{display: block; text-align: right;}
+.enjoyPointContent > span{display: block; text-align: center;margin: 20px 0;}
+
+
+/*------------------- goods -----------------*/
+main#mainContent section#goodsSection h3:before { left: 46%; width: 8%; }
+main#mainContent section#goodsSection .goodsContainer { overflow: hidden; margin-top: 40px; }
+main#mainContent section#goodsSection .goodsContainer article {  
+	border: 1px solid #333;
+	float: left;
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 490px;
+	height: 600px;
+} 
+main#mainContent section#goodsSection .goodsContainer article:nth-child(odd) {
+	margin-right: 20px;
+}
+main#mainContent section#goodsSection .goodsContainer article img { width: 100%; }
+main#mainContent section#goodsSection .goodsContainer article p { margin: 0; }
+main#mainContent section#goodsSection .goodsContainer article p.goodsName,
+main#mainContent section#goodsSection .goodsContainer article p.goodsPrice {
+	font-weight: bold;
+	font-size: 18px;
+}
+main#mainContent section#goodsSection .goodsContainer article p.goodsDescription { margin: 20px 0; }
+main#mainContent section#goodsSection .goodsContainer article p.goodsPrice { text-align: right; }
+article p{white-space: pre-line;}
+
+/*----------------------- charm -----------------*/
+main#mainContent section#charmSection h3:before {
+	left: 47%;
+    width: 6%;
+}
+#charmSection h4{margin: 20px 0;}
+main section#charmSection .contentWidth p{ margin-bottom: 30px;}
+.superPlay p{white-space: pre-line;}
+.superPlay h5{
+	text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    color: #00c1de;
+}
+.superPlayTxt p{text-align: left;white-space: pre-line;}
+
+/*------------------- TECHNIQUE -------------------*/
+main#mainContent section#techniqueSection h3:before {
+	left: 47%;
+    width: 6%;
+}
+
+main#mainContent section#techniqueSection p { margin: 0; }
+main#mainContent section#techniqueSection .techniqueContainer { overflow: hidden; margin-top: 30px; } 
+main#mainContent section#techniqueSection .techniqueContainer article {  
+	border: 1px solid #333;
+	float: left;
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 490px;
+	background: #fff;
+}
+main#mainContent section#techniqueSection .techniqueContainer article:nth-child(odd) {
+	margin-right: 20px;
+}
+main#mainContent section#techniqueSection .techniqueContainer article .techniqueTitle {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+main#mainContent section#techniqueSection .techniqueContent { overflow: hidden; }
+main#mainContent section#techniqueSection .techniqueContent iframe,
+main#mainContent section#techniqueSection .techniqueContent p { float: left; }
+main#mainContent section#techniqueSection .techniqueContainer article .techniqueContent p {
+	width: 50%;
+	margin-left: 10px;
+}
+
+/*-------------- smartphone --------------*/
+@media only screen and (max-width: 750px) { 
+	main#mainContent section.aboutSection { padding: 30px 10px; overflow: hidden; }
+	main#mainContent section.aboutSection article { padding: 20px 0 0; }
+	main#mainContent section.aboutSection p { margin-bottom: 10px; }
+	main#mainContent section.aboutSection img { width: 100%; }
+
+	main#mainContent section#enjoyPoint .enjoyPointContent { margin-bottom: 20px; }
+
+	main#mainContent section#goodsSection .goodsContainer { padding: 0; margin-top: 20px; }
+	main#mainContent section#goodsSection .goodsContainer article {
+		float: none;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 10px;
+		height: auto;
+	}
+	main#mainContent section#goodsSection .goodsContainer article:nth-child(odd) { margin-right: 0; }
+	main#mainContent section#goodsSection .goodsContainer article p.goodsDescription { margin: 10px 0; }
+
+	main section#charmSection .contentWidth p{margin: 15px 0 15px 0px;}
+	.superPlayTxt h5{margin: 10px 0;}
+	.superPlay{text-align: center;}
+	.superPlay iframe{float: none;width: 100%;}
+	.superPlayTxt{float: none;width: 100%; margin-left: 0; text-align: left;}
+
+	main#mainContent section#techniqueSection .techniqueContainer { margin-top: 15px; padding-bottom: 30px; }
+	main#mainContent section#techniqueSection .techniqueContainer article { 
+		width: 100%;
+		float: none;
+		padding: 10px;
+		margin-bottom: 0;
+	}
+	.swiperYoutube .swiper-pagination-bullets{margin-top: 10px;}
+	main#mainContent section#techniqueSection .techniqueContainer article:nth-child(odd) { margin-right: 0; }
+	main#mainContent section#techniqueSection .techniqueContainer article .techniqueTitle { margin-bottom: 10px; }
+	main#mainContent section#techniqueSection .techniqueContent img, main#mainContent section#techniqueSection .techniqueContent p {float: left; width: 45%; }
+	main#mainContent section#techniqueSection .techniqueContainer article .techniqueContent p{width: 100%; float: none; font-size: 13px; text-align: left;}
+	main#mainContent section#techniqueSection .techniqueContainer article .techniqueContent iframe { width: 100%; float: none; }
+	main#mainContent section#enjoyPoint .enjoyPointContent .enjoyPointInfo .enjoyImage{width: 100%;/* height: 250px; */  overflow: hidden; margin-bottom: 10px;}
+	main#mainContent section#enjoyPoint .enjoyPointContent .enjoyPointInfo .enjoyImage img{
+		width: 100%;
+		height: auto;
+		line-height: 0;
+	}
+	main#mainContent section#enjoyPoint .enjoyPointContent .enjoyPointInfo p { width: 100%;font-size: 14px;}
+	main#mainContent section#enjoyPoint .enjoyPointContent:nth-child(odd) .enjoyPointInfo img{margin-left: 0;}
+	
+	main#mainContent section#techniqueSection .techniqueContainer.sp { overflow: inherit; }
+	.swiperYoutube { position: relative; }
+	.swiperYoutube .swiper-pagination-bullets {
+		bottom: auto;
+	}
+	.swiperYoutube .swiper-button-next, .swiperYoutube .swiper-button-prev {
+		top: auto;
+		background-image: none;
+		top: 50%;
+	}
+	.swiperYoutube .swiper-button-next i, .swiperYoutube .swiper-button-prev i {
+		color: #F7AF00;
+		font-size: 40px;
+		width: auto;
+		height: auto;
+	}
+	.swiperYoutube .swiper-button-next { right: 0; }
+	.swiperYoutube .swiper-button-prev { left: 0; }
+	.swiperYoutube .swiper-pagination-bullet {
+		border: 1px solid #363636;
+		width: 15px;
+		height: 15px;
+	}
+	.swiperYoutube .swiper-pagination-bullet-active { 
+		background-color: #363636;
+	}
+	
+}

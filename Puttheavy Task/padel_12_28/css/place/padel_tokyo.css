@@ -1,0 +1,399 @@
+
+
+main#mainContent article.padelTokyoDes { padding: 40px 20px; }
+
+/*----------------- link scroll ------------------*/
+main#mainContent section.padelTokyoLinkScroll.linkScroll { margin-top: 0; } 
+
+main#mainContent section.padelTokyoLinkScroll.linkScroll .links { margin-right: 5px; }
+main#mainContent section.padelTokyoLinkScroll.linkScroll .links a { width: 188px; }
+main#mainContent section.padelTokyoLinkScroll.linkScroll .links:nth-of-type(3) a{padding:25px 0;}
+main#mainContent section.padelTokyoLinkScroll.linkScroll .links a span{display: block;margin: 0 auto;}
+main#mainContent section.padelTokyoLinkScroll.linkScroll .links a:first-child { margin-right: 5px; }
+main#mainContent section.padelTokyoLinkScroll.linkScroll .links:last-child,
+main#mainContent section.padelTokyoLinkScroll.linkScroll .links:last-child a:last-child { 
+	margin-right: 0; 
+	line-height: 14px;
+	vertical-align: middle;
+}
+/*main#mainContent section.padelTokyoLinkScroll.linkScroll .links:nth-child(2) a,
+main#mainContent section.padelTokyoLinkScroll.linkScroll .links:last-child a { padding: 20px 0; } */
+
+
+/*--------------- news ---------------*/
+main#mainContent section#news ul.list01 {margin: 40px auto 0; }
+
+/*-------------------- twitter and facebook ---------------*/
+main#mainContent section#twitterAndFacebook { overflow: hidden; }
+main#mainContent section#twitterAndFacebook article {  
+	width: 50%;
+	height: 670px;
+	float: left;
+	padding: 40px;
+	overflow: hidden;
+}
+main#mainContent section#twitterAndFacebook article h3 { margin-bottom: 20px;text-align: center;}
+main#mainContent section#twitterAndFacebook article h3:before { 
+	left: 37%;
+	width: 23%;
+}
+main#mainContent section#twitterAndFacebook article h3 span { 
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif; 
+	padding-bottom: 20px;
+}
+main#mainContent section#twitterAndFacebook article:first-child {
+	background-color: #f7af00;
+	text-align: right;
+}
+main#mainContent section#twitterAndFacebook article:first-child .twitter { float: right; }
+main#mainContent section#twitterAndFacebook article:first-child h3 span {
+	font-size: 28px;
+	line-height: 30px;
+	padding-bottom: 10px;
+}
+main#mainContent section#twitterAndFacebook article:last-child {
+	padding-top: 60px;
+	background-color: #fff;
+	text-align: left;
+}
+main#mainContent section#twitterAndFacebook article:last-child .facebook { float: left; }
+main#mainContent section#twitterAndFacebook article:last-child .facebook .fbWrapper {
+	width: 420px;
+	height: 500px;
+}
+main#mainContent section#twitterAndFacebook article:last-child .facebook iframe, 
+main#mainContent section#twitterAndFacebook article:last-child .facebook iframe div{ 
+	width: 420px !important;
+	height: 500px !important;
+	overflow: hidden; 
+}
+main#mainContent section#twitterAndFacebook article:last-child h3:before {
+	border-color: #f42534;
+}
+main#mainContent section#twitterAndFacebook article:last-child h3 span { 
+	font-size: 30px;
+	line-height: 30px;
+	color: #333; 
+}
+
+
+/*------------------ cv 01 ---------------------*/
+main#mainContent section#cv01 {
+	background-color: #e9e6db;
+	padding: 40px 0;
+	text-align: center;
+	overflow: hidden;
+}
+main#mainContent section#cv01 a.btnNav {
+	float: none;
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
+}
+main#mainContent section#cv01 a.btnNav:hover {
+	background-color: #333;
+	color: #fff;
+}
+ 
+main#mainContent section.padelTokyoSection h3 {
+	color: #333;
+}
+main#mainContent section.padelTokyoSection h3:before {
+	border-color: #f42534;
+}
+main#mainContent section.padelTokyoSection h3.scheduleTitle { color: #fff; }
+/*--------------------- information ----------------*/
+main#mainContent section.information { padding: 60px 20px 0; }
+main#mainContent section.information > img { margin-top: 60px; }
+main#mainContent section.padelTokyoSection article.swiperImages { padding: 30px 0; }
+main#mainContent section.padelTokyoSection article.swiperImages .swiper-button-next, 
+main#mainContent section.padelTokyoSection article.swiperImages .swiper-button-prev { 
+	background-image: none; 
+	width: auto;
+	height: auto;
+}
+main#mainContent section.padelTokyoSection article.swiperImages .swiper-button-next { right: 10px; }
+main#mainContent section.padelTokyoSection article.swiperImages .swiper-button-prev { left: 10px; }
+main#mainContent section.padelTokyoSection article.swiperImages .swiper-button-next i,
+main#mainContent section.padelTokyoSection article.swiperImages .swiper-button-prev i { 
+	color: #fff;
+	font-size: 40px;
+	text-shadow :  0 0 3px #000;
+}
+
+main#mainContent section.padelTokyoSection article.infoDescription {
+	background-color: #f7f5eb;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+main#mainContent section.padelTokyoSection article.infoDescription > div { margin-bottom: 15px; }
+main#mainContent section.padelTokyoSection article.infoDescription > div:last-child { margin-bottom: 0; }
+main#mainContent section.padelTokyoSection article.infoDescription div.infoLocation { overflow: hidden; }
+main#mainContent section.padelTokyoSection article.infoDescription div.infoLocation div { float: left; }
+main#mainContent section.padelTokyoSection article.infoDescription div.infoLocation div.locationDesc { width: 50%; margin-right: 2%; } 
+main#mainContent section.padelTokyoSection article.infoDescription div.infoLocation div.locationDesc p { margin-bottom: 10px; margin-top: 0; }
+/*main#mainContent section.padelTokyoSection article.infoDescription div.infoLocation div.locationDesc p:nth-child(5) { margin-bottom: 10px; }*/
+main#mainContent section.padelTokyoSection article.infoDescription div.infoLocation div.locationMaps { width: 48%; }
+/*main#mainContent section.padelTokyoSection article.infoDescription div.infoOthers { width: 450px; }*/
+main#mainContent section.padelTokyoSection article.infoDescription div.infoOthers img { margin: 30px 0 10px; }
+
+/*------- information tabs ----------*/
+main#mainContent section article#infoTabs { padding: 0; }
+/*main#mainContent section.padelTokyoSection article#infoTabs .tabLinksWrapper { border: 1px solid #333; }*/
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks{ margin: 0; }
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks:first-child { margin-right: 0; }
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li { margin-right: 0; }
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li a { 
+	border-right: none;
+	background-color: #eeeeee;
+	position: relative;
+}
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks:nth-child(2) li:last-child a { border-right: 1px solid #333; }
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li.active a, 
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li.active a,
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li a:hover { 
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #333;
+	border-right: none;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li.active a:before,
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li:hover a:before {
+	content: '';
+    display: block;
+    height: 10px;
+    background-color: #00c1de;
+    position: absolute;
+    top: -10px;
+    left: -1px;
+    right: -1px;
+    border: 1px solid #333;
+    border-bottom: none; 
+} 
+/*main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li.active a:before, 
+main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li:hover a:before {
+	border: 1px solid #333;
+	left: -1px;
+	right: -1px;
+	border-bottom: none;
+}*/
+main#mainContent section article#infoTabs .tabContent { border-top: none; padding: 30px 20px; }
+
+/*------------------------ staff ------------------*/
+main#mainContent section.staff { padding-top: 60px; padding-bottom: 40px; }
+main#mainContent section.staff .staffContainer { overflow: hidden; margin-top: 30px; }
+main#mainContent section.staff .staffContainer article { 
+	overflow: hidden; 
+	float: left;
+	border: 1px solid #333;
+	padding: 20px;
+	width: 490px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+main#mainContent section.staff .staffContainer article:nth-child(even) { margin-right: 0; }
+main#mainContent section.staff .staffContainer article figure,
+main#mainContent section.staff .staffContainer article .staffInfo
+{ float: left; } 
+
+main#mainContent section.staff .staffContainer article figure { 
+	margin: 0; 
+	text-align: center;
+	margin-right: 10px;
+}
+main#mainContent section.staff .staffContainer article figure figcaption { 
+	font-weight: bold;
+	font-size: 18px;
+}
+main#mainContent section.staff .staffContainer .staffInfo p { margin-bottom: 10px; } 
+
+
+/*------------------------ SCHEDULE --------------------*/
+main#mainContent section.schedule { padding-top: 0; padding-bottom: 60px; }
+main#mainContent section.schedule:nth-child(even) { background-color: #e9e6db; }
+
+main#mainContent section.schedule article { text-align: center; padding: 0 20px; padding-top: 40px; } 
+main#mainContent section.schedule article .rsvBtn a.btnMore { 
+	text-align: center; 
+	background-color: #f42534;
+	color: #fff;
+	background-image:  url(../../img/btn_more_bg.png);
+	border-color: #f42534;
+}
+main#mainContent section.schedule article .rsvBtn a.btnMore:hover {
+	border-color: #333;
+	background-color: #fff;
+	color: #333;
+	background-image: url(../../img/faq_btn_bg.png);
+}
+
+/*------------------------ LESSON SCHEDULE --------------------*/
+/*------------------------ EVENT SCHEDULE ----------------------*/
+/*------------------------ RENTAL SCHEDULE ----------------------*/
+
+
+/*----------------- cv buttons -----------------*/
+main#mainContent section.cv { background-color: #e9e6db; }
+main#mainContent section.cv .cvButtons {
+	padding: 40px 20px; 
+	overflow: hidden; 
+}
+main#mainContent section.cv .cvButtons a { 
+	background-color: #f42534;
+	color: #fff;
+	border-color: #f42534;
+	background-image: url(../../img/white_nav_bg.png);
+}
+main#mainContent section.cv .cvButtons a:hover { 
+	border-color: #333;
+	background-color: #fff;
+	color: #333;
+	background-image: url(../../img/red_nav_bg.png);
+}
+
+/*
+
+*/
+
+.greenTitleBG {
+	background-color: #00b551;
+	font-size: 16px;
+	color: #fff;
+	padding: 1px 5px;
+	margin-bottom: 10px;
+}
+.greenTitleBG p{
+	display: block;
+}
+.greenTitleColor {
+	font-size: 18px;
+	color: #00b551;
+	margin-bottom: 5px;
+}
+.bgImg {
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 5px;
+}
+.squareBg {
+	font-weight: bold; 
+	/*background-image: url(../../img/place/square_bg.png);*/
+}
+ .dotInput{
+	margin-left: 8px;
+}
+
+.dotBg { 
+	/*background-image: url(../../img/place/dot_bg.png); */
+	background-position: 5px 10px;
+}
+.noteBg { 
+	background-image: url(../../img/place/note_bg.png);
+	background-position: left 4px;
+	margin-bottom: 10px;
+}
+.noteBg:last-child { margin-bottom: 0; }
+
+.bnrLink { margin-top: 30px; }
+
+/*-------------- smartphone --------------*/
+@media only screen and (max-width: 750px) { 
+	main#mainContent section img { width: 100%; }
+	main#mainContent article.padelTokyoDes { padding: 20px 10px; }
+
+	main#mainContent section.padelTokyoLinkScroll.linkScroll .links a {
+		width: 49%;
+	}
+	main#mainContent section.padelTokyoLinkScroll.linkScroll .links:nth-of-type(3) a{padding:10px 0;}
+	main#mainContent section.padelTokyoLinkScroll.linkScroll .links a span{display: inline;}
+	main#mainContent section.padelTokyoLinkScroll.linkScroll .links a:first-child { margin-right: 2%; }
+	main#mainContent section.padelTokyoLinkScroll.linkScroll .links:last-child a { width: 100%; }
+
+	main#mainContent section#news ul.list01 { padding: 0 10px; margin: 20px auto 0; }
+	
+
+	/*--------------------- twitter and facebook ----------------*/
+	main#mainContent section#twitterAndFacebook article {
+		float: none;
+		width: 100%;
+		padding: 20px 10px;
+		height: auto;
+		text-align: center;
+	}
+	main#mainContent section#twitterAndFacebook article:last-child { padding-top: 20px; }
+	main#mainContent section#twitterAndFacebook article img { width: 100%; }
+
+	main#mainContent section#cv01 { padding: 20px 0; }
+
+	/*------------------- info ----------------*/
+	main#mainContent section.information { padding: 30px 0 0; }
+	main#mainContent section.information > img { margin-top: 20px;  padding: 0 10px;}
+	main#mainContent section.padelTokyoSection article.swiperImages { padding: 15px 0; }
+	main#mainContent section.padelTokyoSection article.infoDescription { padding: 10px; margin-bottom: 15px; }
+	
+	/*---------tabs-----*/
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks { margin-bottom: 2%; }
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li { width: 50%; }
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li a { border: 2px solid #333; }
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks:nth-child(2) li:last-child a { border-right: 2px solid #333; }
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li:first-child a { border-right: none; }
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li.active a, 
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li.active a, 
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li a:hover {
+		border: 2px solid #333;
+	}
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li.active a:before, 
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li:hover a:before {
+		border: 2px solid #333;
+		border-bottom: none;
+		left: -2px;
+		right: -2px;
+	}
+	main#mainContent section article#infoTabs .tabLinksWrapper .tabLinks li:first-child.active a { border-right: none; } 
+	main#mainContent section article#infoTabs .tabContent { padding: 10px 10px 15px 10px; }
+
+	/*----------------- staff ---------------*/
+	main#mainContent section.staff { padding-top: 30px; margin-bottom: 0; }
+	main#mainContent section.staff .staffContainer { margin-top: 15px; }
+	main#mainContent section.staff .staffContainer article {
+		float: none;
+		width: 100%;
+		padding: 10px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	main#mainContent section.staff .staffContainer article figure, main#mainContent section.staff .staffContainer article .staffInfo { width: 49%; }
+	main#mainContent section.staff .staffContainer article figure { margin-right: 2%; }
+	main#mainContent section.staff .staffContainer article .staffInfo .greenTitleColor { margin-bottom: 0; }
+	main#mainContent section.staff .staffContainer .staffInfo p { margin-bottom: 5px; }
+
+	/*-------------------- schedule ---------------*/
+	main#mainContent section.schedule { padding-bottom: 30px; }
+	main#mainContent section.schedule article { padding: 20px 10px 0; }
+	main#mainContent section.schedule article .rsvBtn { float: none; text-align: center; }
+	main#mainContent section.schedule article .rsvBtn a.btnMore { width: 100%; }
+	main#mainContent section#twitterAndFacebook article:last-child .facebook { text-align: center; float: none; width: 100%; }
+
+	main#mainContent section article#infoTabs .tabLinksWrapper{
+		margin-bottom: 0;
+	    background: #fff;
+	    padding: 15px 10px 5px 10px;
+	}
+
+
+	/*---------------------*/
+	main#mainContent section#twitterAndFacebook article:first-child .twitter { float: none; text-align: center; }
+	main#mainContent section#twitterAndFacebook article:last-child .facebook .fbWrapper { width: 100%; }
+	main#mainContent section#twitterAndFacebook article:last-child .facebook iframe,
+	main#mainContent section#twitterAndFacebook article:last-child .facebook span,
+	main#mainContent section#twitterAndFacebook article:last-child .facebook div._2p3a,
+	main#mainContent section#twitterAndFacebook article:last-child .facebook iframe div{ width:100% !important}
+	main#mainContent section#twitterAndFacebook article:last-child h3 span{font-size: 25px;}
+    main#mainContent section.padelTokyoSection article.infoDescription div.infoLocation div.locationDesc{width: 100%;}
+    main#mainContent section.padelTokyoSection article.infoDescription div.infoLocation div.locationMaps{width: 100%; padding: 10px;}
+
+    .bnrLink { margin-top: 0; }
+}
