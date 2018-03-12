@@ -32,7 +32,19 @@ Route::group(['namespace'=>'Article','prefix'=>'article'],function (){
 
 
 });
+Route::group(['namespace'=>'admin','prefix'=>'admin'],function (){
 
+    //============post =================
+
+    Route::get('/dashboard','PostController@getDashboard');
+    Route::get('/post','PostController@getPost');
+    Route::get('/add-new','PostController@addNew');
+    //=====================================================
+    Route::get('/category','CategoryController@getCategory');
+    Route::post('/saveCategory','CategoryController@saveCategory');
+    Route::put('/edit/{id}',['uses'=>'CategoryController@editCategory']);
+    Route::patch('/saveUpdateCategory','CategoryController@saveUpdateCategory');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

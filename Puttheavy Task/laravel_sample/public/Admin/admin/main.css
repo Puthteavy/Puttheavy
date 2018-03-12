@@ -1,0 +1,10 @@
+.more{
+    width: 75px;
+    overflow: hidden;
+    display: block;
+    float: left;
+
+}
+.more form{
+    width: 100%;
+}
