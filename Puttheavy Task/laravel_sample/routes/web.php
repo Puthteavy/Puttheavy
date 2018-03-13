@@ -43,7 +43,8 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'],function (){
     Route::get('/category','CategoryController@getCategory');
     Route::post('/saveCategory','CategoryController@saveCategory');
     Route::put('/edit/{id}',['uses'=>'CategoryController@editCategory']);
-    Route::patch('/saveUpdateCategory','CategoryController@saveUpdateCategory');
+    Route::patch('/update/{id}','CategoryController@saveUpdateCategory');
+    Route::delete('/delete/{id}', 'CategoryController@getDelete');
 });
 Auth::routes();
 

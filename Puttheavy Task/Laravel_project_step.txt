@@ -341,6 +341,11 @@ table : user
 - in article model point reference to user model
 - run auth of laravel that is the basic login log out in laravel
  php artisan make:auth
+ ===================================================
+ make unsigned table 1 with table b
+ should be table 1 create after table 2
+
+ ===================================================
 
 
 

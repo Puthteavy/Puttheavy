@@ -8,5 +8,13 @@ class Category extends Model
 {
     //
     protected $table = 'categories';
-    
+    protected $fillable = [
+        'category_name',
+        'category_slug',
+
+    ];
+    public function posts()
+    {
+        return $this->hasMany('App\Models\Admin\Post');
+    }
 }

@@ -54,25 +54,25 @@
                             </tr>
                             </thead>
                             <tbody>
-                              @foreach($category as $row)
+                              @foreach($category as $categories)
                                   <tr>
-                                      <td>{{$row->id}}</td>
-                                      <td>{{$row->category_name}}</td>
-                                      <td>{{$row->category_slug}}</td>
+                                      <td>{{$categories->id}}</td>
+                                      <td>{{$categories->category_name}}</td>
+                                      <td>{{$categories->category_slug}}</td>
                                       <td>
                                           <div class="form-group more">
-                                              <form action="{{ url('/admin/edit/'.$row->id) }}" method="post" id="form-delete">
+                                              <form action="{{ url('/admin/edit/'.$categories->id) }}" method="post" id="form-delete">
                                                   <button type="submit" class="btn btn-outline btn-circle btn-sm purple" id="submit">
                                                       <i class="fa fa-edit"> Edit</i>
                                                   </button>
                                                   {{ csrf_field() }}
                                                   {{ method_field('PUT') }}
                                               </form>
-                                              {{--<a href="{{url('/admin/edit/'.$row->id)}}">Edit</a>--}}
+
                                           </div>
                                           <div class="form-group">
 
-                                              <form action="{{ url('/edit/'. $row->id) }}" method="post">
+                                              <form action="{{ url('/admin/delete/'. $categories->id) }}" method="post">
                                                   <button type="submit" class="btn btn-outline btn-circle dark btn-sm black" id="delete">
                                                       <i class="fa fa-trash-o"> Delete</i></button>
                                                   {{ csrf_field() }}

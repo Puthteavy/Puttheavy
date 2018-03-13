@@ -25,24 +25,27 @@ class CategoryController extends Controller
 
         $category->save();
         //$article->create($request->all()); // save to db
-        return redirect('admin/category/category');
+        return redirect('admin/category');
     }
     function editCategory($id){
 
-//        $category = Category::where('id',$id)->first();
-//        return view('Admin.category.editCategory',compact('category'));
         $category = Category::findOrFail($id);
         return view('Admin.category.editCategory')->with('category',$category);
     }
     function saveUpdateCategory(Request $request,$id){
 
         $category = Category::findOrFail($id);
-//        $this->validate($request ,[
-//            'category_name'=>'required|max:255|min:3|unique:Categories,category_name,'.$category->id.',id',
-//            'category_slug'=>'required|min:5',
-//
-//        ]);
+        $this->validate($request ,[
+            'category_name'=>'required|max:255|min:3|unique:categories,category_name,'.$category->id.',id',
+            'category_slug'=>'required|min:1',
+        ]);
         $category->update($request->all());
-        return redirect('admin/category/category');
+        return redirect('admin/category');
+    }
+    function getDelete(Request $request,$id){
+        $category = Category::findOrFail($id);
+
+        $category->delete($request->all());
+        return redirect('admin/category');
     }
 }
