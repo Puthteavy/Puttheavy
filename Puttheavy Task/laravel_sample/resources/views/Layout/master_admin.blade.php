@@ -1,6 +1,7 @@
 @php
     $base_url = asset('Admin/assets');
     $base_add = asset('Admin/admin');
+    $image_url = asset('images');
 @endphp
         <!DOCTYPE html>
 <!--
@@ -463,9 +464,10 @@ License: You must have a valid license purchased only from themeforest(the above
                             </li>
                             <li class="nav-item start ">
                                 <a href="{{url('admin/category')}}" class="nav-link "><span class="title">Category</span></a>
+
                             </li>
                             <li class="nav-item start ">
-                                <a href="dashboard_3.html" class="nav-link "><span class="title">Tags</span></a>
+                                <a href="{{url('admin/subcategory')}}" class="nav-link "><span class="title">Item </span></a>
                             </li>
                         </ul>
                     </li>

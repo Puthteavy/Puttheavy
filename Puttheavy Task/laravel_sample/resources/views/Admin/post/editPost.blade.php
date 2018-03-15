@@ -20,56 +20,56 @@
             </div>
             <div class="portlet-body form">
                 <!-- BEGIN FORM-->
-                <form action="{{url('admin/savePost')}}" class="form-horizontal" method="post" enctype="multipart/form-data">
-                    {{csrf_field()}}
+
+                    {!! Form::model($post,['url' => '/admin/updatePost/'. $post->id,'class'=>'form-horizontal','files'=> true,'method'=>'post']) !!}
+                    {{ csrf_field() }}
+                    {{ method_field('PATCH') }}
                     <div class="form-body">
                         <div class="form-group">
                             <label class="col-md-3 control-label">Title</label>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" placeholder="Title" name="title">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Category</label>
-                            <div class="col-md-4">
-                                <select name="category_id" class="form-control" required>
-                                    <option value="">Select category</option>
-                                    @foreach($getCategory as $category)
-                                        <option value="{{$category->id}}">{{ $category->category_name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Description</label>
-                            <div class="col-md-4">
-                                <input type="text" class="form-control" placeholder="Description" name="description">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Content</label>
-                            <div class="col-md-4">
-                                <textarea class="form-control" placeholder="Description" rows="15" name="content"></textarea>
+                                <input type="text" class="form-control" name="title" value="{{$post->title}}">
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Description</label>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" name="description" value="{{$post->description}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-3">
+                                    <img src="{{ asset('images/'.$post->image) }}" width="60" height="50">
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group last">
                             <label class="col-md-3 control-label">Image</label>
                             <div class="col-md-4">
                                 <input type="file" name="image" class="form-control">
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Content</label>
+                            <div class="col-md-4">
+                                <textarea class="form-control" rows="15" name="content">{{$post->content}}</textarea>
+                            </div>
+                        </div>
+
+
                     </div>
 
                     <div class="form-actions top">
                         <div class="row">
                             <div class="col-md-offset-3 col-md-9">
-                                <button type="submit" class="btn green" name="submit">Submit</button>
-                                <button type="reset" class="btn default" name="cancel">Cancel</button>
+                                <button type="submit" class="btn green" name="submit">Update</button>
+                                <a href="{{url('admin/post')}}" class="btn red">Back</a>
                             </div>
                         </div>
                     </div>
-                </form>
+                {!! Form::close() !!}
                 <!-- END FORM-->
             </div>
         </div>

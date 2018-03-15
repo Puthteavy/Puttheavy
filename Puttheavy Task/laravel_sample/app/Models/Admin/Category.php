@@ -11,10 +11,12 @@ class Category extends Model
     protected $fillable = [
         'category_name',
         'category_slug',
+        'description'
 
     ];
     public function posts()
     {
         return $this->hasMany('App\Models\Admin\Post');
     }
+
 }

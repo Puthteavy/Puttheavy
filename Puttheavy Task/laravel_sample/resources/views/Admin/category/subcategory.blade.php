@@ -1,9 +1,9 @@
 @extends('Layout.master_admin')
-@section('title','Category')
+@section('title','Category Item')
 @section('css')
     @parent
 @endsection
-@section('pageTitle','Category')
+@section('pageTitle','Category Item')
 @section('note','A black page template with a minimal dependency assets to use as a base for any custom page you create')
 @section('content')
     <div class="row">
@@ -27,14 +27,14 @@
                                 <input type="text" class="form-control" placeholder="Name" name="category_slug">
                             </div>
                             {{--<div class="form-group">--}}
-                                {{--<label>Parent Category</label>--}}
-                                {{--<select class="form-control input-medium" name="category_id">--}}
-                                    {{--<option>Please Select</option>--}}
-                                    {{--@foreach($category as $cat)--}}
-                                        {{--<option value="{{$cat->id}}">{{$cat->category_name}}</option>--}}
-                                        {{--@endforeach--}}
+                            {{--<label>Parent Category</label>--}}
+                            {{--<select class="form-control input-medium" name="category_id">--}}
+                            {{--<option>Please Select</option>--}}
+                            {{--@foreach($category as $cat)--}}
+                            {{--<option value="{{$cat->id}}">{{$cat->category_name}}</option>--}}
+                            {{--@endforeach--}}
 
-                                {{--</select>--}}
+                            {{--</select>--}}
                             {{--</div>--}}
 
                             <div class="form-group">
@@ -66,47 +66,49 @@
                                 <th> Name</th>
                                 <th> Slug </th>
                                 <th> Description</th>
+                                <th>Parent Category</th>
                                 <th> Status </th>
                             </tr>
                             </thead>
                             <tbody>
-                              @foreach($category as $categories)
-                                  <tr>
-                                      <td>{{$categories->id}}</td>
-                                      <td>{{$categories->category_name}}</td>
-                                      <td>{{$categories->category_slug}}</td>
-                                      <td>{{$categories->description}}</td>
+                            @foreach($item as $items)
+                                <tr>
+                                    <td>{{$items->id}}</td>
+                                    <td>{{$items->c_name}}</td>
+                                    <td>{{$items->c_slug}}</td>
+                                    <td>{{$items->c_description}}</td>
+                                    <td>{{$items->category_name}}</td>
 
-                                      <td>
-                                          <div class="form-group more">
-                                              <form action="{{ url('/admin/edit/'.$categories->id) }}" method="post" id="form-delete">
-                                                  <button type="submit" class="btn btn-outline btn-circle btn-sm purple" id="submit">
-                                                      <i class="fa fa-edit"> Edit</i>
-                                                  </button>
-                                                  {{ csrf_field() }}
-                                                  {{ method_field('PUT') }}
-                                              </form>
+                                    <td>
+                                        <div class="form-group more">
+                                            <form action="{{ url('/admin/edit/'.$items->id) }}" method="post" id="form-delete">
+                                                <button type="submit" class="btn btn-outline btn-circle btn-sm purple" id="submit">
+                                                    <i class="fa fa-edit"> Edit</i>
+                                                </button>
+                                                {{ csrf_field() }}
+                                                {{ method_field('PUT') }}
+                                            </form>
 
-                                          </div>
-                                          <div class="form-group">
+                                        </div>
+                                        <div class="form-group">
 
-                                              <form action="{{ url('/admin/delete/'. $categories->id) }}" method="post">
-                                                  <button type="submit" class="btn btn-outline btn-circle dark btn-sm black" id="delete">
-                                                      <i class="fa fa-trash-o"> Delete</i></button>
-                                                  {{ csrf_field() }}
-                                                  {{ method_field('DELETE') }}
-                                              </form>
-                                          </div>
+                                            <form action="{{ url('/admin/delete/'. $items->id) }}" method="post">
+                                                <button type="submit" class="btn btn-outline btn-circle dark btn-sm black" id="delete">
+                                                    <i class="fa fa-trash-o"> Delete</i></button>
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+                                            </form>
+                                        </div>
 
-                                      </td>
-                                  </tr>
-                              @endforeach
+                                    </td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
                     <div class="dataTables_paginate paging_bootstrap_full_number" id="sample_1_2_paginate">
                         <ul class="pagination" style="visibility: visible;">
-                            {{ $category->links() }}
+                            {{ $item->links() }}
                         </ul></div>
                 </div>
             </div>

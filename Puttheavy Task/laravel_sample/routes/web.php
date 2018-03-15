@@ -39,12 +39,19 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'],function (){
     Route::get('/dashboard','PostController@getDashboard');
     Route::get('/post','PostController@getPost');
     Route::get('/add-new','PostController@addNew');
+    Route::post('/savePost', 'PostController@savePost');
+    Route::put('/editPost/{id}','PostController@editPost');
+    Route::patch('/updatePost/{id}','PostController@saveUpdate');
+    Route::delete('/deletePost/{id}', 'PostController@getDeletePost');
+
     //=====================================================
     Route::get('/category','CategoryController@getCategory');
     Route::post('/saveCategory','CategoryController@saveCategory');
     Route::put('/edit/{id}',['uses'=>'CategoryController@editCategory']);
     Route::patch('/update/{id}','CategoryController@saveUpdateCategory');
     Route::delete('/delete/{id}', 'CategoryController@getDelete');
+    //=============sub cat===================
+    Route::get('/subcategory','CategoryController@subCategory');
 });
 Auth::routes();
 

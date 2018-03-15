@@ -30,10 +30,15 @@
                                 <label class="control-label">Category Slug</label>
                                 <input type="text" name="category_slug" class="form-control" value="{{ $category->category_slug}}">
                             </div>
+                            <div class="form-group">
+                                <label class="control-label">Description</label><br>
+                                <textarea name="description"  class="form-control" rows="7">{{$category->description}}</textarea>
+                            </div>
 
                         </div>
                         <div class="form-actions">
                            <button type="submit" class="btn green">Update</button>
+                            <a href="{{url('admin/category')}}" class="btn red">Back</a>
                         </div>
                         {{ csrf_field() }}
                         {{ method_field('PATCH') }}

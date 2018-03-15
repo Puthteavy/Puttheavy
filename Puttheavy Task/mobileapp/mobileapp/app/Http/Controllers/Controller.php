@@ -228,12 +228,12 @@ class Controller extends BaseController
             {
                 $row2 = Post_Category::where('parent_id',$row1s->id)->get();
 
-                if($row2->count() > 0) //is parent
+                if($row2->count() > 0) //is parent have child
                 {
                     $html2 .= '<h3 class="text-light-gray" style="margin-left:10px;">&nbsp;'.$row1s->category_name.'</h3>';
                     $html2 .= $this->getPost_Category($row1s->id);
                 }
-                else
+                else // no child
                 {
                     $html1 .= '<div class="checkbox-inline checkbox-success">
                                <input type="checkbox" value="'.$row1s->id.'" name="category_id['.$row1s->id.']">

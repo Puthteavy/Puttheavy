@@ -15,10 +15,14 @@ class CreatePostCategoriesTable extends Migration
     {
         Schema::create('post_categories', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('category_name')->nullable();
-            $table->string('description')->nullable();
-            $table->integer('parent_id')->nullable();
+            $table->integer('parent_id')->unsigned();
+            $table->string('c_name');
+            $table->string('c_slug');
+            $table->string('c_description');
+
             $table->timestamps();
+            $table->foreign('parent_id')->references('id')->on('categories')->
+            onDelete('cascade')->onUpdate('cascade');
         });
     }
 
