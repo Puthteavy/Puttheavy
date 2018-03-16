@@ -368,9 +368,13 @@ For get(), you retrieve all the rows that fit the where clauses.
 
 get() array object
 ==================================
-
-
-
+table : category , post , page(uniqe) , image lip (for slide show , advertise)
+==================================
+FrontEnd
+=======================
+- make model no need to migrate
+- controller
+- protected to table they query from
 
 
 

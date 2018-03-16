@@ -14,7 +14,7 @@ class PostController extends Controller
         return view('Admin.post.dashboard');
     }
     public function getPost(){
-        $post = Post::orderby('id','desc')->paginate(5);
+        $post = Post::orderby('id','desc')->paginate(3);
         return view('Admin.post.post',compact('post'));
     }
 
@@ -25,6 +25,14 @@ class PostController extends Controller
         return view('Admin.post.add_new',['getCategory'=>$getCategory]);
     }
     function savePost(Request $request){
+        $this->validate($request ,[
+            'title'=>'required',
+            'category_id'=>'required',
+            'description' => 'required',
+            'image' => 'required|image|mimes:jpg,jpeg,png,gif',
+            'content' => 'required',
+        ]);
+        $filename = null;
 
         if($request->image != null) {
             $imagepath = time() . '.' . $request->image->getClientOriginalExtension();
@@ -52,28 +60,21 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
         return view('Admin.post.editPost')->with('post',$post);
     }
-    function saveUpdate(Request $request,$id){
-        $img_url = '';
-        if($request->image != null)
-        {
-            $imagepath = time(). '.' . $request->image->getClientOriginalExtension();
-            $request->image->move(public_path('/images/'), $imagepath);
-            $img_url = $imagepath;
-        }
-        $id = $request->input('id');
-        $data = [
 
-            'title'       =>  $request->input('title'),
-            'description' =>  $request->input('description'),
-            'image'       =>  $img_url,
-            'content' =>  $request->input('content'),
-        ];
-        if($img_url == '')
-        {
-            unset($data['image']);
-        }
+    public function saveUpdate(Request $request, $id)
+    {
+        $data=Post::findOrFail($id);
+        $data->update($request->all());
 
-        Post::where('id',$id)->update($data);
+        if ($request->hasFile('image'))
+        {
+            $file = $request->file('image');
+
+            $name = time(). '-' .$file->getClientOriginalName();
+            $data->image = $name;
+            $file->move(public_path().'/images/', $name);
+            $data->save();
+        }
         return redirect('/admin/post');
     }
     function getDeletePost(Request $request,$id){

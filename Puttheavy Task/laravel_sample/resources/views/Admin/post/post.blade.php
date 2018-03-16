@@ -66,7 +66,7 @@
                         </div>
                         <div class="dataTables_paginate paging_bootstrap_full_number" id="sample_1_2_paginate">
                             <ul class="pagination" style="visibility: visible;">
-
+                                  {{$post->links()}}
                             </ul>
                         </div>
                     </div>

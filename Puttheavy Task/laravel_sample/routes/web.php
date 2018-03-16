@@ -11,9 +11,18 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
+//namespace if for folder structure
+Route::group(['namespace'=>'frontend','prefix'=>'/'],function () {
+    Route::get('', 'NewsController@index');
+
+});
+
+
+
+
 Route::group(['namespace'=>'Article','prefix'=>'article'],function (){
 
     //============post =================
