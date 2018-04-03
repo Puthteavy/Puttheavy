@@ -1,0 +1,129 @@
+//import other file
+@import "reset";
+
+// declare variable
+$primary-color : #1b331f;
+$width-content : 980px;
+$height-content : 1000px;
+$padding : 30px;
+// function
+@function min-height($a,$b){
+  @return $height-content/$a - $padding/$b;
+}
+.web-content{
+  width: $width-content/4;
+  height: min-height(2,4);
+  background-color: #0c5460;
+  float: left;
+  margin:20px;
+}
+.box-container{
+  width: $width-content;
+  padding:20px;
+  background-color: #0a6aa1;
+  overflow: hidden;
+}
+.box01{
+  //operator
+  width: $width-content /2 - $padding /2; //980/2 - 30/2 = 475px
+  padding: $padding /2;
+  background-color: #71ff57;
+  float: left;
+
+}
+//mixin : When you find yourself writing the same code over and over again
+// Sass mixins are CSS functions that you can include whenever you want.
+@mixin box(){
+  opacity: 0.4;
+  padding: 20px;
+  width: $width-content/5;
+  overflow: hidden;
+  color: #fff;
+  margin:10px;
+}
+@mixin box2($val:2%){
+  -webkit-border-radius: $val;
+  -moz-border-radius: $val;
+  -ms-border-radius: $val;
+  border-radius: $val;
+}
+//=============================optional parameter
+@mixin label($text: "Code", $background: yellow, $color: rgba(black, 0.5)) {
+  &:before{
+    background: $background;
+    color: $color;
+    content: $text;
+  }
+}
+div.highlighter-rouge{
+  @include label();
+  &.css{
+    @include label("CSS", blue, white);
+  }
+  &.scss{
+    @include label("SCSS", #c69, white);
+  }
+}
+//===============================================
+.model{
+  @include box();
+  @include box2;// get the default value
+  background-color: black;
+}
+.model1{
+  @extend .model;
+  @include box2(10%); //assign new value
+  background-color: #0c5460;
+}
+
+
+//=======================================================
+.content{
+  width:980px;
+  margin:0 auto;
+}
+nav.nav-menu{
+  overflow: hidden;
+  ul{
+    list-style: none;
+  }
+  li{
+    padding: 20px;
+    float: left;
+  }
+
+  //a:hover,a:focus,a:visited{  color: indianred;  }
+  //a.link-class{  color: #71ff57;}
+  //a.link-class:hover,a.link-class:visited,a.link-class:focus{ color: indianred;}
+//  sass style
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    color: $primary-color;
+    font-weight: bold;
+    &:hover, &:visited, &:active{color: #97cd5d;}
+    &.link-class{
+      color: #0a6aa1;
+      &:hover, &:visited, &:active{color: #0a001f;}
+    }
+  }
+
+
+}
+
+.container{
+  padding: 20px;
+  overflow: hidden;
+}
+.block01{
+  width: 400px;
+  float: left;
+  padding: 20px;
+  background-color: palevioletred;
+  color: #173647;
+}
+.block02{
+  //inheritance
+  @extend .block01;
+  background-color: #ff7733;
+}

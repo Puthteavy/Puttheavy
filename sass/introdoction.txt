@@ -1,0 +1,49 @@
+-install sass
+- install ruby
+- then install sass with ruby : gem install sass
+
+- create file .scss then convert to css by :
+sass style.scss main.css
+===========
+after add new style need to use cmd sass style.scss main.css to mapping file
+then :
+
+update sass automatically :
+================================
+sass --watch style.scss:output.css
+===========================
+make project with sass and live-server
+==================================================
+- create sass
+- run cmd live-server in your project to make your fake server and auto reload after
+save
+=========================================================
+to make sass are auto change in folder by
+-  create sass folder
+- create css folder
+these both have the same name with difference extension
+----------------------
+then run the command :::: sass --watch sass:css
+--compress style .min.css
+sass --watch sass:css --style compressed
+sass --watch sass:css --style expended
+=----------------
+install global sever : live-server
+
+using live-server 
+install with npm 
+npm install -g live-server
+then to run the project with live-server is 
+--- type : live-server
+so page reload automatically after changes to files can accelerate development.
+it's create fake server for you.
+============================
+install local sever : lodash A modern JavaScript utility library delivering modularity, performance & extras.
+- to make browser support with any feather is 
+- npm install -g browserify
+-using bundle.js to encrypt file 
+browserify script.js > bundle.js 
+then in index.html include only bundle.js
+afer change somthing in the script.js need to update bunlde.js
+=============================================================
+

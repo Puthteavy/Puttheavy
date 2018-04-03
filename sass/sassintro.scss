@@ -1,0 +1,21 @@
+//- declare variable
+$color : #fff;
+//inheritence
+//@extends
+.block02{
+  @extend .block01;
+  background-color: #ff7733;
+  color: $color;
+}
+
+a{
+  text-decoration: none;
+  font-size: 20px;
+  color: $primary-color;
+  font-weight: bold;
+  &:hover, &:visited, &:active{color: indianred;}
+  &.link-class{
+    color: #0a6aa1;
+    &:hover, &:visited, &:active{color: #0a001f;}
+  }
+}

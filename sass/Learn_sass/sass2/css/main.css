@@ -1,0 +1,11 @@
+.home {
+  overflow: hidden; }
+
+.main-class {
+  font-size: 14px; }
+  .main-class .sub-main {
+    display: block; }
+    .main-class .sub-main .style {
+      overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */

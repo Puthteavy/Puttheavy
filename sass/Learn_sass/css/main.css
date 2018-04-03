@@ -1,0 +1,101 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: inline-block; }
+
+body {
+  font-family: "Arial Black", arial-black;
+  font-size: 14px;
+  overflow: hidden; }
+
+.web-content {
+  width: 245px;
+  height: 492.5px;
+  background-color: #0c5460;
+  float: left;
+  margin: 20px; }
+
+.box-container {
+  width: 980px;
+  padding: 20px;
+  background-color: #0a6aa1;
+  overflow: hidden; }
+
+.box01 {
+  width: 475px;
+  padding: 15px;
+  background-color: #71ff57;
+  float: left; }
+
+div.highlighter-rouge:before {
+  background: yellow;
+  color: rgba(0, 0, 0, 0.5);
+  content: "Code"; }
+div.highlighter-rouge.css:before {
+  background: blue;
+  color: white;
+  content: "CSS"; }
+div.highlighter-rouge.scss:before {
+  background: #c69;
+  color: white;
+  content: "SCSS"; }
+
+.model, .model1 {
+  opacity: 0.4;
+  padding: 20px;
+  width: 196px;
+  overflow: hidden;
+  color: #fff;
+  margin: 10px;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  border-radius: 2%;
+  background-color: black; }
+
+.model1 {
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  border-radius: 10%;
+  background-color: #0c5460; }
+
+.content {
+  width: 980px;
+  margin: 0 auto; }
+
+nav.nav-menu {
+  overflow: hidden; }
+  nav.nav-menu ul {
+    list-style: none; }
+  nav.nav-menu li {
+    padding: 20px;
+    float: left; }
+  nav.nav-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #1b331f;
+    font-weight: bold; }
+    nav.nav-menu a:hover, nav.nav-menu a:visited, nav.nav-menu a:active {
+      color: #97cd5d; }
+    nav.nav-menu a.link-class {
+      color: #0a6aa1; }
+      nav.nav-menu a.link-class:hover, nav.nav-menu a.link-class:visited, nav.nav-menu a.link-class:active {
+        color: #0a001f; }
+
+.container {
+  padding: 20px;
+  overflow: hidden; }
+
+.block01, .block02 {
+  width: 400px;
+  float: left;
+  padding: 20px;
+  background-color: palevioletred;
+  color: #173647; }
+
+.block02 {
+  background-color: #ff7733; }
+
+/*# sourceMappingURL=main.css.map */
